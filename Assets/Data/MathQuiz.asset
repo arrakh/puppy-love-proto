@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: MathQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: 3+4
+    answer: "answer is 7"
+  - question: 8+6
+    answer: "it must be 14"
+  - question: 9+2
+    answer: "I believe it's 11"
+  - question: 7+5
+    answer: "12, of course!"
+  - question: 6+3
+    answer: "9 it is"
+  - question: 10+1
+    answer: "the answer is 10"
+  - question: 4+9
+    answer: "must be 13"
+  - question: 15+5
+    answer: "it is 20"
+  - question: 8+7
+    answer: "15, I think?"
+  - question: 12+3
+    answer: "should be 16"
+  - question: 11+4
+    answer: "pretty sure it's 17"
+  - question: 14+6
+    answer: "I'm confident it's 18"
+  - question: 5+8
+    answer: "the number is 19"
+  - question: 9+7
+    answer: "21 it is!"
+  - question: 6+9
+    answer: "hmm… I’d say 22"
+  - question: 13+2
+    answer: "this has to be 23"
+  - question: 10+9
+    answer: "I'm going with 24"
+  - question: 7+6
+    answer: "it's gotta be 25"
+  - question: 8+5
+    answer: "this one is 26"
+  - question: 16+4
+    answer: "20, no doubt"
+  - question: 9+8
+    answer: "I’d guess 27"
+  - question: 14+3
+    answer: "28 it must be"
+  - question: 11+7
+    answer: "probably 29"
+  - question: 10+6
+    answer: "let’s say 30"
+  - question: 12+5
+    answer: "seems like 31"
+  - question: 13+4
+    answer: "it has to be 32"
+  - question: 7+8
+    answer: "most definitely 33"
+  - question: 9+5
+    answer: "I’m sure it’s 34"
+  - question: 6+7
+    answer: "it's gotta be 35!"
+  - question: 15+2
+    answer: "I'm thinking 36"
+  fakeAnswers:
+  - "probably a banana"
+  - "I lost count"
+  - "5 apples"
+  - "watching 3 movies"
+  - "it's 9 o'clock"
+  - "a dozen donuts"
+  - "half a pizza"
+  - "42, the answer to everything"
+  - "7, or was it 100?"
+  - "3 and a half unicorns"
+  - "1 football team"
+  - "too many to count"
+  - "it's a secret"
+  - "you tell me"
+  - "a spaceship on Mars"
+  - "counting is hard"
+  - "17, trust me"
+  - "11 pancakes"
+  - "4 cups of coffee"
+  - "999 problems but math ain't one"
+  - "try again later"
+  - "23, or was it a dream?"
+  - "a missing sock and 2 spoons"
+  - "not 6, idk"
+  - "divided by 0, error!"
+  - "yesterday’s lunch"
+  - "ask your math teacher"
+  - "a mystery for the ages"
+  - "2 pizzas, delicious"
