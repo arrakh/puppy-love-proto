@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9abdcdc9fbb02f64ab14c501c4ca0ac2
+guid: ef0e5737ba1f2274a8e13b9af1ac75ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4003711178817216266
-    second: moodPoint_0
+      213: 978851968072134051
+    second: plannerBook_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: moodPoint_0
+      name: plannerBook_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 20
-        width: 181
-        height: 68
+        x: 19
+        y: 14
+        width: 791
+        height: 1033
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0f19a4ca1a009730800000000000000
-      internalID: 4003711178817216266
+      spriteID: 3ada1a4cda4959d00800000000000000
+      internalID: 978851968072134051
       vertices: []
       indices: 
       edges: []
