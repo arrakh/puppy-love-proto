@@ -24,16 +24,20 @@ public class QuizController : MonoBehaviour
     public QuizEntries currentEntry;
     public Timer timer;
     public Color[] colors;
+    public string[] stressDistractions;
+    
     private Color currentColor;
 
     private Queue<Quiz> quizQueue = new();
     private Quiz currentQuiz;
-    private List<string> answerPool = new(); 
+    private List<(string, bool)> answerPool = new(); 
     private List<Color> answerColorPool = new(); 
 
     private TaskCompletionSource<string> quizAnswerTsc = new();
     private int correctCount, wrongCount;
 
+    public event Action onNewQuiz;
+    
     public string CurrentAnswer => currentQuiz.answer;
 
     private IEnumerator Start()
@@ -49,9 +53,11 @@ public class QuizController : MonoBehaviour
             questionText.text = currentQuiz.question;
 
             GenerateAnswerPool();
-            //DetermineColors();
-            
+            DetermineColors();
+
             timer.Set(baseTimer);
+            
+            onNewQuiz?.Invoke();
             
             yield return new WaitUntil(HasProgressedQuiz);
 
@@ -86,13 +92,15 @@ public class QuizController : MonoBehaviour
 
         answerPool = currentEntry.entries
             .Where(x => !x.answer.Equals(currentQuiz.answer))
-            .Select(x => x.answer).ToArray()
-            .Take(otherAnswerCount). ToList();
-
-        var fakeAnswers = currentEntry.fakeAnswers.Take(fakeAnswerCount);
-        answerPool.AddRange(fakeAnswers);
+            .Select(x => (x.answer, false)).ToArray()
+            .Take(otherAnswerCount).ToList();
         
-        answerPool.Add(currentQuiz.answer);
+        answerPool.Add((currentQuiz.answer, false));
+        
+        //distractions
+        var fakeAnswers = currentEntry.fakeAnswers.Take(fakeAnswerCount).Select(x => (x, true));
+        answerPool.AddRange(fakeAnswers);
+        answerPool.AddRange(stressDistractions.Select(x => (x, true)));
     }
 
     private void UpdateStatus()
@@ -115,9 +123,9 @@ public class QuizController : MonoBehaviour
 
     private bool HasProgressedQuiz() => timer.IsCompleted() || quizAnswerTsc.Task.IsCompleted;
 
-    public void Answer(string answer) => quizAnswerTsc.SetResult(answer);
+    public void Answer(string answer) => quizAnswerTsc?.SetResult(answer);
 
-    public List<string> GetAnswerPool() => answerPool;
+    public List<(string, bool)> GetAnswerPool() => answerPool;
 
     public Color GetRandomColor() => answerColorPool[Random.Range(0, answerColorPool.Count)];
     public Color GetCurrentColor() => currentColor;

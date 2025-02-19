@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2851717529685363708}
   - component: {fileID: 821081427661566687}
   - component: {fileID: 8570784154084968078}
+  - component: {fileID: 8235656468655017585}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -97,7 +98,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 52
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -130,12 +131,26 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 40, y: 10, z: 40, w: 10}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8235656468655017585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522154110857703265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
 --- !u!1 &6826572168248138189
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +163,6 @@ GameObject:
   - component: {fileID: 3543858068779603514}
   - component: {fileID: 8766649427607895239}
   - component: {fileID: 2963305824959866541}
-  - component: {fileID: 2532836561196709065}
   - component: {fileID: 5457510827729588757}
   m_Layer: 5
   m_Name: AnswerButton
@@ -172,10 +186,10 @@ RectTransform:
   - {fileID: 2851717529685363708}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 480, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3543858068779603514
 CanvasRenderer:
@@ -259,26 +273,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2532836561196709065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6826572168248138189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: 360
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
 --- !u!114 &5457510827729588757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +285,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260e759c6feb4e319d2a1b336f77fd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startSpeedBoost: 4000
+  startSpeedBoostVariance: 300
+  targetSpeed: 200
+  targetSpeedVariance: 100
+  deceleration: 10000
+  decelerationVariance: 1000
   button: {fileID: 2963305824959866541}
   answerText: {fileID: 8570784154084968078}
+  rect: {fileID: 304618073136256857}
+  textRect: {fileID: 2851717529685363708}
   background: {fileID: 8766649427607895239}

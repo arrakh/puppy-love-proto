@@ -15,63 +15,63 @@ MonoBehaviour:
   entries:
   - question: 3+4
     answer: "answer is 7"
-  - question: 8+6
+  - question: 10+4
     answer: "it must be 14"
-  - question: 9+2
+  - question: 6+5
     answer: "I believe it's 11"
-  - question: 7+5
+  - question: 8+4
     answer: "12, of course!"
-  - question: 6+3
+  - question: 15-6
     answer: "9 it is"
-  - question: 10+1
+  - question: 20-10
     answer: "the answer is 10"
-  - question: 4+9
-    answer: "must be 13"
-  - question: 15+5
-    answer: "it is 20"
-  - question: 8+7
-    answer: "15, I think?"
-  - question: 12+3
-    answer: "should be 16"
-  - question: 11+4
-    answer: "pretty sure it's 17"
-  - question: 14+6
-    answer: "I'm confident it's 18"
-  - question: 5+8
-    answer: "the number is 19"
-  - question: 9+7
-    answer: "21 it is!"
-  - question: 6+9
-    answer: "hmm… I’d say 22"
-  - question: 13+2
-    answer: "this has to be 23"
-  - question: 10+9
-    answer: "I'm going with 24"
-  - question: 7+6
-    answer: "it's gotta be 25"
-  - question: 8+5
-    answer: "this one is 26"
-  - question: 16+4
-    answer: "20, no doubt"
-  - question: 9+8
-    answer: "I’d guess 27"
-  - question: 14+3
-    answer: "28 it must be"
-  - question: 11+7
-    answer: "probably 29"
-  - question: 10+6
-    answer: "let’s say 30"
-  - question: 12+5
-    answer: "seems like 31"
-  - question: 13+4
-    answer: "it has to be 32"
-  - question: 7+8
-    answer: "most definitely 33"
-  - question: 9+5
-    answer: "I’m sure it’s 34"
   - question: 6+7
+    answer: "must be 13"
+  - question: 12+8
+    answer: "it is 20"
+  - question: 10+5
+    answer: "15, I think?"
+  - question: 20-4
+    answer: "should be 16"
+  - question: 25-8
+    answer: "pretty sure it's 17"
+  - question: 9+9
+    answer: "I'm confident it's 18"
+  - question: 25-6
+    answer: "the number is 19"
+  - question: 12+9
+    answer: "21 it is!"
+  - question: 30-8
+    answer: "hmm… I’d say 22"
+  - question: 40-17
+    answer: "this has to be 23"
+  - question: 30-6
+    answer: "I'm going with 24"
+  - question: 50-25
+    answer: "it's gotta be 25"
+  - question: 14+12
+    answer: "this one is 26"
+  - question: 35-15
+    answer: "20, no doubt"
+  - question: 50-23
+    answer: "I’d guess 27"
+  - question: 14+14
+    answer: "28 it must be"
+  - question: 58-29
+    answer: "probably 29"
+  - question: 20+10
+    answer: "let’s say 30"
+  - question: 40-9
+    answer: "seems like 31"
+  - question: 20+12
+    answer: "it has to be 32"
+  - question: 66-33
+    answer: "most definitely 33"
+  - question: 40-6
+    answer: "I’m sure it’s 34"
+  - question: 50-15
     answer: "it's gotta be 35!"
-  - question: 15+2
+  - question: 50-14
     answer: "I'm thinking 36"
   fakeAnswers:
   - "probably a banana"
