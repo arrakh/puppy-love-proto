@@ -147,4 +147,10 @@ public class QuizController : MonoBehaviour
 
     public Color GetRandomColor() => answerColorPool[Random.Range(0, answerColorPool.Count)];
     public Color GetCurrentColor() => currentColor;
+
+    public void Clear()
+    {
+        finalScreen.gameObject.SetActive(false);
+        questionText.text = String.Empty;
+    }
 }

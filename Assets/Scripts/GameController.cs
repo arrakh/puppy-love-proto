@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Ink;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -12,24 +13,40 @@ namespace DefaultNamespace
         public QuizController quizController;
         public PlannerUI plannerUi;
         public TransitionUI transitionUi;
+        public TextAsset story;
+        public InkStoryController storyController;
+        public DialogueUI dialogueUi;
 
         public TaskCompletionSource<int> scheduleCompleteTsc = new();
 
+        public enum State
+        {
+            QUIZ,
+            DIALOGUE,
+            PLANNING
+        }
+
+        private bool hasFirstFail = false;
+        private State state;
+        
         private IEnumerator Start()
         {
+            storyController.InitializeStory(story.text);
+
             foreach (var day in daysData)
             {
                 yield return transitionUi.WaitTransitionIn(day.dayName, 0.6f, 1.4f);
                 transitionUi.TransitionOut(2f);
                 
-                plannerUi.DisplayProgress(0);
+                SetState(State.DIALOGUE);
+                yield return storyController.StartStory("morning");
+                yield return new WaitForSeconds(0.6f);
+                
+                SetState(State.PLANNING);
 
-                quizController.gameObject.SetActive(false);
-                plannerUi.gameObject.SetActive(true);
-                
                 plannerUi.Display(day);
-                
                 plannerUi.SetIsPlanningMode(true);
+                plannerUi.DisplayProgress(0);
 
                 yield return new WaitUntil(() => scheduleCompleteTsc.Task.IsCompleted);
 
@@ -46,6 +63,10 @@ namespace DefaultNamespace
                 {
                     yield return new WaitForSeconds(0.8f);
                     yield return DoClass(classSlot.classData);
+
+                    if (!hasFirstFail && !quizController.HasPassed)
+                        yield return DoFirstMoment();
+                    
                     plannerUi.DisplayProgress(strikeCount);  
                     strikeCount++;
                 }
@@ -67,6 +88,19 @@ namespace DefaultNamespace
             yield break;
         }
 
+        private IEnumerator DoFirstMoment()
+        {
+            hasFirstFail = true;
+            
+            SetState(State.DIALOGUE);
+            yield return storyController.StartStory("first_moment");
+            
+            yield return transitionUi.WaitTransitionIn("", 0.6f, 2.4f);
+            yield return transitionUi.WaitTransitionOut(1f);
+
+            SetState(State.PLANNING);
+        }
+
         private IEnumerator DoDinner()
         {
             Debug.Log("DOING DINNER...");
@@ -80,9 +114,8 @@ namespace DefaultNamespace
             Debug.Log($"DOING CLASS: {data.displayName}");
             yield return transitionUi.WaitTransitionIn(data.displayName, 0.6f, 2.4f);
             
-            quizController.gameObject.SetActive(true);
-            quizController.finalScreen.gameObject.SetActive(false);
-            plannerUi.gameObject.SetActive(false);
+            SetState(State.QUIZ);
+            quizController.Clear();
 
             yield return transitionUi.WaitTransitionOut(3f);
 
@@ -98,6 +131,22 @@ namespace DefaultNamespace
             yield return new WaitForSeconds(2f);
             
             yield break;
+        }
+
+        private void SetState(State newState)
+        {
+            state = newState;
+            
+            quizController.gameObject.SetActive(false);
+            plannerUi.gameObject.SetActive(false);
+            dialogueUi.gameObject.SetActive(false);
+
+            switch (state)
+            {
+                case State.QUIZ: quizController.gameObject.SetActive(true); break;
+                case State.DIALOGUE: dialogueUi.gameObject.SetActive(true); break;
+                case State.PLANNING: plannerUi.gameObject.SetActive(true); break;
+            }
         }
     }
 }
