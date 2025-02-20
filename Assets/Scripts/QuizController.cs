@@ -40,7 +40,7 @@ public class QuizController : MonoBehaviour
     
     public string CurrentAnswer => currentQuiz.answer;
 
-    private IEnumerator Start()
+    private IEnumerator StartQuiz()
     {
         QueueQuiz(currentEntry);
         

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b655641e2046529e8f0a3fa7441c29, type: 3}
+  m_Name: Week1Day2
+  m_EditorClassIdentifier: 
+  dayName: Tuesday
+  classes:
+  - {fileID: 11400000, guid: 1c24a8a0c35eb364194e62c104e1f7e7, type: 2}
+  - {fileID: 11400000, guid: 402c09ac1d5d35f4d959af1e3427ab0f, type: 2}
+  - {fileID: 11400000, guid: 48517c8c49a4f354eb4d386daf61cb6c, type: 2}
