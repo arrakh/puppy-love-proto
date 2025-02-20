@@ -6,5 +6,6 @@ namespace DefaultNamespace
     public class SchoolClassData : EventData
     {
         public QuizEntries entries;
+        public QuizParameters parameters;
     }
 }

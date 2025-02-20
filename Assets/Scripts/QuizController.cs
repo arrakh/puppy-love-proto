@@ -12,12 +12,12 @@ using Random = UnityEngine.Random;
 
 public class QuizController : MonoBehaviour
 {
-    public float baseTimer = 5f;
-    public int quizCount = 10;
-    public int passingGrade = 7;
-    public int otherAnswerCount = 7;
-    public int fakeAnswerCount = 4;
-    public int colorCount;
+    public float baseTimer = 20f;
+    public int quizCount = 3;
+    public int passingGrade = 2;
+    public int otherAnswerCount = 4;
+    public int fakeAnswerCount = 3;
+    public int colorCount = 4;
 
     public BrainstormAnswer brainstormAnswer;
     public TextMeshProUGUI questionText;
@@ -44,8 +44,11 @@ public class QuizController : MonoBehaviour
     
     public string CurrentAnswer => currentQuiz.answer;
 
-    public IEnumerator StartQuiz(QuizEntries entries)
+    public IEnumerator StartQuiz(QuizParameters parameters, QuizEntries entries)
     {
+        ApplyParameters(parameters);
+        brainstormAnswer.ApplyParameters(parameters);
+        
         currentEntry = entries;
 
         correctCount = 0;
@@ -91,6 +94,16 @@ public class QuizController : MonoBehaviour
         resultText.text = $"{correctCount} / {quizCount} correct, " + (HasPassed ? "<color=green>You Passed!" : "<color=red>You Failed!");
         
         yield return new WaitForSeconds(5f);
+    }
+
+    private void ApplyParameters(QuizParameters parameters)
+    {
+        baseTimer = parameters.baseTimer;
+        quizCount = parameters.quizCount;
+        passingGrade = parameters.passingGrade;
+        otherAnswerCount = parameters.otherAnswerCount;
+        fakeAnswerCount = parameters.fakeAnswerCount;
+        colorCount = parameters.colorCount;
     }
 
     private void DetermineColors()

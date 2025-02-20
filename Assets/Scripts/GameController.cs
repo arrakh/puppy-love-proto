@@ -9,6 +9,9 @@ namespace DefaultNamespace
 {
     public class GameController : MonoBehaviour
     {
+        public float logic = 10f;
+        public float mood = 10f;
+        
         public DayData[] daysData;
         public QuizController quizController;
         public PlannerUI plannerUi;
@@ -119,7 +122,7 @@ namespace DefaultNamespace
 
             yield return transitionUi.WaitTransitionOut(3f);
 
-            yield return quizController.StartQuiz(data.entries);
+            yield return quizController.StartQuiz(data.parameters, data.entries);
             
 
         }

@@ -14,6 +14,7 @@ namespace DefaultNamespace
         public ClassSlot[] classSlots;
         public ActivityButton[] activityButtons;
         public TextMeshProUGUI[] textToStrike;
+        public RectTransform activitiesArea;
         
         public Button confirmButton;
 
@@ -48,6 +49,7 @@ namespace DefaultNamespace
         public void SetIsPlanningMode(bool isPlanningMode)
         {
             confirmButton.gameObject.SetActive(isPlanningMode);
+            activitiesArea.gameObject.SetActive(isPlanningMode);
             
             for (var i = 0; i < activitySlots.Length; i++)
             {

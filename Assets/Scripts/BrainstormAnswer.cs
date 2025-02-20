@@ -10,12 +10,11 @@ namespace DefaultNamespace
 {
     public class BrainstormAnswer : MonoBehaviour
     {
-        public int brainstormCount = 3;
-        public float logic = 10f;
-        public float mood = 10f;
+        public int brainstormCount = 2;
         public float drainPerFocus = 1.3f;
         public float classLogicToMoodRatio = 0.7f;
-        
+
+        public GameController gameController;
         public QuizController quizController;
         public Button brainstormButton;
         public Button focusButton;
@@ -37,6 +36,9 @@ namespace DefaultNamespace
             var logicCost = drainPerFocus * classLogicToMoodRatio;
             var moodCost = drainPerFocus * (1 - classLogicToMoodRatio);
 
+            var logic = gameController.logic;
+            var mood = gameController.mood;
+
             if (logic < logicCost || mood < moodCost) return;
 
             logic -= logicCost;
@@ -49,8 +51,11 @@ namespace DefaultNamespace
 
         private void Update()
         {
-            logicText.text = logic.ToString("F1");
-            moodText.text = mood.ToString("F1");
+            var logicCost = drainPerFocus * classLogicToMoodRatio;
+            var moodCost = drainPerFocus * (1 - classLogicToMoodRatio);
+            
+            logicText.text = "-" + logicCost.ToString("F1");
+            moodText.text = "-" + moodCost.ToString("F1");
         }
 
         private void OnBrainstorm()
@@ -94,6 +99,13 @@ namespace DefaultNamespace
         {
             ClearAnswers();
             ClearDistractions();
+        }
+
+        public void ApplyParameters(QuizParameters parameters)
+        {
+            brainstormCount = parameters.brainstormCount; 
+            drainPerFocus = parameters.drainPerFocus; 
+            classLogicToMoodRatio = parameters.classLogicToMoodRatio; 
         }
     }
 }

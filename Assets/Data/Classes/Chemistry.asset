@@ -14,3 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Chemistry
   entries: {fileID: 11400000, guid: 69b58488ead34754585fa6807e7511b7, type: 2}
+  parameters:
+    baseTimer: 14
+    quizCount: 5
+    passingGrade: 3
+    otherAnswerCount: 6
+    fakeAnswerCount: 5
+    colorCount: 4
+    brainstormCount: 2
+    drainPerFocus: 1
+    classLogicToMoodRatio: 1
