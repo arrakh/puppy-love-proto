@@ -97,17 +97,21 @@ namespace DefaultNamespace
             
             SetState(State.DIALOGUE);
             yield return storyController.StartStory("first_moment");
+            Debug.Log("FIRST MOMENT DONE");
             
             yield return transitionUi.WaitTransitionIn("", 0.6f, 2.4f);
-            yield return transitionUi.WaitTransitionOut(1f);
-
             SetState(State.PLANNING);
+
+            yield return transitionUi.WaitTransitionOut(1f);
         }
 
         private IEnumerator DoDinner()
         {
             Debug.Log("DOING DINNER...");
-            yield return new WaitForSeconds(2f);
+            yield return transitionUi.WaitTransitionIn("", 0.6f, 2.4f);
+            SetState(State.DIALOGUE);
+            yield return storyController.StartStory("dinner_week");
+            yield return transitionUi.WaitTransitionOut(1f);
 
             yield break;
         }

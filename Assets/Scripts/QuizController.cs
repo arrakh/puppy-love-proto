@@ -24,6 +24,7 @@ public class QuizController : MonoBehaviour
     public TextMeshProUGUI statusText;
     public TextMeshProUGUI resultText;
     public GameObject finalScreen;
+    public GameObject quizHolder;
     public Image questionBg;
     public QuizEntries currentEntry;
     public Timer timer;
@@ -46,6 +47,8 @@ public class QuizController : MonoBehaviour
 
     public IEnumerator StartQuiz(QuizParameters parameters, QuizEntries entries)
     {
+        quizHolder.gameObject.SetActive(true);
+
         ApplyParameters(parameters);
         brainstormAnswer.ApplyParameters(parameters);
         
@@ -93,7 +96,7 @@ public class QuizController : MonoBehaviour
         finalScreen.gameObject.SetActive(true);
         resultText.text = $"{correctCount} / {quizCount} correct, " + (HasPassed ? "<color=green>You Passed!" : "<color=red>You Failed!");
         
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
     }
 
     private void ApplyParameters(QuizParameters parameters)
@@ -165,5 +168,6 @@ public class QuizController : MonoBehaviour
     {
         finalScreen.gameObject.SetActive(false);
         questionText.text = String.Empty;
+        quizHolder.gameObject.SetActive(false);
     }
 }

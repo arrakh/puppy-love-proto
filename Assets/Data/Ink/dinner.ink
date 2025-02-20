@@ -1,6 +1,6 @@
 
 === dinner_week ===
-How was your week? Anything worth mentioning? #box right
+How was your week? Anything worth mentioning? #box right #bg dinner
 * It was fine, pretty much the same as last week. #box left
 * Exhausting… there was so much homework. #box left
 * Not bad, at least nothing went terribly wrong. #box left
@@ -15,7 +15,7 @@ How was your week? Anything worth mentioning? #box right
 * I might not have done well… but I really tried. #box left
 * Why do we have to talk about grades every time we eat? #box left
 
--
+- You finish your food in silence... #box event
 ->END
 
 === dinner_straight_a ===

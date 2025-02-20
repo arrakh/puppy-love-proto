@@ -36,5 +36,5 @@ It’s not easy, though. There’s so much to learn, and sometimes I wonder if I
 * \(Even when Shu’s unsure, they still keep moving forward.\\n I wish I could be like that…)
 * \(They shine in a way I never expected.\\n Maybe that’s why, right now, I can’t look away.)
 
--
+- You walk out of the library with a strange but warm feeling #box event
 -> END

@@ -36,17 +36,14 @@ namespace DefaultNamespace
             var logicCost = drainPerFocus * classLogicToMoodRatio;
             var moodCost = drainPerFocus * (1 - classLogicToMoodRatio);
 
-            var logic = gameController.logic;
-            var mood = gameController.mood;
+            if (gameController.logic < logicCost || gameController.mood < moodCost) return;
 
-            if (logic < logicCost || mood < moodCost) return;
-
-            logic -= logicCost;
-            mood -= moodCost;
+            gameController.logic -= logicCost;
+            gameController.mood -= moodCost;
 
             ClearDistractions();
             
-            focusButton.interactable = !(logic < logicCost || mood < moodCost);
+            focusButton.interactable = !(gameController.logic < logicCost || gameController.mood < moodCost);
         }
 
         private void Update()
