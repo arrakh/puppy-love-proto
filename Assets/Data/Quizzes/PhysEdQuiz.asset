@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: PhysEdQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "How many players in a soccer team on field?"
+    answer: "11"
+  - question: "Which sport uses a racket and shuttlecock?"
+    answer: "Badminton"
+  - question: "What is the term for running at full speed?"
+    answer: "Sprint"
+  - question: "Which sport involves a hoop and ball?"
+    answer: "Basketball"
+  - question: "Which Olympic event involves swimming, cycling, and running?"
+    answer: "Triathlon"
+  - question: "What sport uses a bat and bases?"
+    answer: "Baseball"
+  - question: "Which martial art comes from Japan?"
+    answer: "Judo"
+  - question: "Which sport is known as 'the king of sports'?"
+    answer: "Soccer"
+  - question: "What stretch targets the hamstrings?"
+    answer: "Toe touch"
+  - question: "Which sport uses pom-poms?"
+    answer: "Cheerleading"
+  - question: "What is the term for heart exercise?"
+    answer: "Cardio"
+  - question: "Which sport uses paddles and a net indoors?"
+    answer: "Table tennis"
+  - question: "Which Olympic event includes throwing a spear?"
+    answer: "Javelin"
+  - question: "Which swimming style is fastest?"
+    answer: "Freestyle"
+  - question: "What is a yoga pose with one leg up?"
+    answer: "Tree pose"
+  - question: "What sport uses a horse and jumps?"
+    answer: "Equestrian"
+  - question: "Which sport has touchdowns?"
+    answer: "American football"
+  - question: "What is a group exercise dance class?"
+    answer: "Zumba"
+  - question: "Which exercise strengthens the core?"
+    answer: "Plank"
+  - question: "Which sport uses a puck on ice?"
+    answer: "Ice hockey"
+  fakeAnswers:
+  - "Definitely a dance-off"
+  - "6 pineapples on court"
+  - "Maybe water polo?"
+  - "3 cats running"
+  - "Secret ninja moves"
+  - "Invisible weights"
+  - "A triple spin donut"
+  - "I think it’s surfing"
+  - "Watermelon challenge"
+  - "Super slow jogging"
+  - "Bananas for speed"
+  - "Penguin diving"
+  - "3 soccer balls"
+  - "A giant beach ball"
+  - "Hopscotch marathon"
+  - "Jumping 10 fences"
+  - "Cheeseburger toss"
+  - "Just dance!"
+  - "5 bananas racing"
+  - "Floating yoga class"

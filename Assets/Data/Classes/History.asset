@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: History
   m_EditorClassIdentifier: 
   displayName: History
+  entries: {fileID: 11400000, guid: a5dadb842835b7a40933f2d8ee9c337b, type: 2}

@@ -68,10 +68,22 @@ namespace DefaultNamespace
 
         private void OnActivityClicked(ActivityButton clicked)
         {
-            if (selectedSlot == null) return;
-            
-            selectedSlot.Display(clicked.data);
+            if (selectedSlot != null)
+            {
+                selectedSlot.Display(clicked.data);
+                selectedSlot = null;
+                EvaluateConfirm();
 
+                return;
+            }
+
+            foreach (var slot in activitySlots)
+                if (slot.activityData == null)
+                {
+                    slot.Display(clicked.data);
+                    break;
+                }
+            
             EvaluateConfirm();
         }
 

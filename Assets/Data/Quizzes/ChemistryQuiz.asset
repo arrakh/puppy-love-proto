@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: ChemistryQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "What is the chemical symbol for water?"
+    answer: "H2O"
+  - question: "Which gas do plants use for photosynthesis?"
+    answer: "CO2"
+  - question: "What element has the symbol O?"
+    answer: "Oxygen"
+  - question: "What is the atomic number of hydrogen?"
+    answer: "1"
+  - question: "Which element is a noble gas: He or Fe?"
+    answer: "He"
+  - question: "What is the pH of pure water?"
+    answer: "7"
+  - question: "What gas do humans exhale?"
+    answer: "Carbon dioxide"
+  - question: "What is NaCl commonly known as?"
+    answer: "Salt"
+  - question: "Which state of matter is ice?"
+    answer: "Solid"
+  - question: "What is the chemical symbol for gold?"
+    answer: "Au"
+  - question: "Which gas is most abundant in Earth's atmosphere?"
+    answer: "Nitrogen"
+  - question: "What type of bond shares electrons?"
+    answer: "Covalent bond"
+  - question: "Which element is represented by K?"
+    answer: "Potassium"
+  - question: "What is the chemical symbol for iron?"
+    answer: "Fe"
+  - question: "What is H2SO4 commonly called?"
+    answer: "Sulfuric acid"
+  - question: "Which element makes diamonds?"
+    answer: "Carbon"
+  - question: "What is the boiling point of water in °C?"
+    answer: "100°C"
+  - question: "Which element's symbol is Pb?"
+    answer: "Lead"
+  - question: "What kind of mixture is salad?"
+    answer: "Heterogeneous"
+  - question: "What’s the lightest element?"
+    answer: "Hydrogen"
+  fakeAnswers:
+  - "Definitely marshmallows"
+  - "2 bananas"
+  - "Green apples"
+  - "Just air, maybe?"
+  - "Triple something"
+  - "Sour grapes"
+  - "Melting cheese"
+  - "Glitter, I guess"
+  - "A bit spicy"
+  - "5 spoons of sugar"
+  - "Chocolate milk"
+  - "Frozen pizza"
+  - "Totally helium"
+  - "Rainbows inside"
+  - "Shiny rocks"
+  - "Jelly beans"
+  - "The sun's favorite"
+  - "3 cups of tea"
+  - "Bubbles and foam"
+  - "Invisible stuff"

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: ArtQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "Who painted the Mona Lisa?"
+    answer: "Leonardo da Vinci"
+  - question: "What art style uses dots of color?"
+    answer: "Pointillism"
+  - question: "Which artist painted The Starry Night?"
+    answer: "Van Gogh"
+  - question: "Which sculpture is famously missing arms?"
+    answer: "Venus de Milo"
+  - question: "What medium uses clay to create objects?"
+    answer: "Ceramics"
+  - question: "Who painted The Persistence of Memory?"
+    answer: "Salvador Dalí"
+  - question: "What style uses geometric shapes?"
+    answer: "Cubism — it's Picasso!"
+  - question: "Which artist is famous for abstract drip painting?"
+    answer: "Jackson Pollock"
+  - question: "Which color do you get by mixing blue and yellow?"
+    answer: "Green"
+  - question: "What do you call a painting of oneself?"
+    answer: "Self-portrait"
+  - question: "Which building houses the Mona Lisa?"
+    answer: "Louvre"
+  - question: "Which art form uses paper folding?"
+    answer: "Origami"
+  - question: "Which color symbolizes love?"
+    answer: "Red"
+  - question: "Which artist cut off his ear?"
+    answer: "Van Gogh"
+  - question: "What material is used in stained glass art?"
+    answer: "Glass"
+  - question: "Which tool is used for drawing?"
+    answer: "Pencil"
+  - question: "What type of art involves yarn and needles?"
+    answer: "Knitting"
+  - question: "Which artist is known for soup can art?"
+    answer: "Andy Warhol"
+  - question: "What do you call black-and-white photography?"
+    answer: "Monochrome"
+  - question: "Which art style looks very realistic?"
+    answer: "Realism"
+  fakeAnswers:
+  - "Definitely ketchup art"
+  - "12 spoons of paint"
+  - "Banana taped to wall"
+  - "7 dots of mystery"
+  - "3D spaghetti sculpture"
+  - "A melted pizza slice"
+  - "5 crayons in space"
+  - "Rainbow soup theory"
+  - "Napkin folding 101"
+  - "Cheese melting art"
+  - "Bubblegum canvas"
+  - "3 brushes, no paint"
+  - "Invisible sculpture"
+  - "Marble pudding bowl"
+  - "8 colors of shadow"
+  - "Muddy footprints art"
+  - "Scribbles of destiny"
+  - "Sticky note masterpiece"
+  - "Shadow dancing"
+  - "Fluffy cloud painting"
+

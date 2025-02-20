@@ -30,7 +30,6 @@ namespace DefaultNamespace
         {
             brainstormButton.onClick.AddListener(OnBrainstorm);
             focusButton.onClick.AddListener(OnFocus);
-            quizController.onNewQuiz += Clear;
         }
 
         private void OnFocus()
@@ -43,11 +42,9 @@ namespace DefaultNamespace
             logic -= logicCost;
             mood -= moodCost;
 
-            focusButton.interactable = !(logic < logicCost || mood < moodCost);
-            foreach (var button in spawnedDistractions)
-                Destroy(button.gameObject);
+            ClearDistractions();
             
-            spawnedDistractions.Clear();
+            focusButton.interactable = !(logic < logicCost || mood < moodCost);
         }
 
         private void Update()
@@ -77,12 +74,26 @@ namespace DefaultNamespace
             }
         }
 
-        private void Clear()
+        public void ClearAnswers()
         {
             foreach (var button in spawnedAnswers)
                 Destroy(button.gameObject);
             
             spawnedAnswers.Clear();
+        }
+
+        private void ClearDistractions()
+        {
+            foreach (var button in spawnedDistractions)
+                Destroy(button.gameObject);
+            
+            spawnedDistractions.Clear();
+        }
+
+        public void ClearAll()
+        {
+            ClearAnswers();
+            ClearDistractions();
         }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6666791658068994797}
   - component: {fileID: 6911871208404014516}
   m_Layer: 5
-  m_Name: EventSlot
+  m_Name: ActivitySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,6 +53,8 @@ MonoBehaviour:
   nameText: {fileID: 4954951838471125233}
   buttonText: {fileID: 6877253048720149776}
   button: {fileID: 5966342230006098997}
+  slotIndex: 0
+  activityData: {fileID: 0}
 --- !u!1 &1824602733856602864
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +426,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.9254902, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.07817807, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_SelectedColor: {r: 0, g: 1, b: 0.28627452, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}

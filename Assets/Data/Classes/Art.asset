@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Art
   m_EditorClassIdentifier: 
   displayName: Art
+  entries: {fileID: 11400000, guid: f4bfa4166e9087f458071efa47fb1f66, type: 2}

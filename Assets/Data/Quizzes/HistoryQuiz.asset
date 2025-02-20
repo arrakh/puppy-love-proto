@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: HistoryQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "Who was the first president of the USA?"
+    answer: "George Washington"
+  - question: "Which war ended in 1945?"
+    answer: "World War II"
+  - question: "Who discovered America in 1492?"
+    answer: "Christopher Columbus"
+  - question: "What wall fell in 1989?"
+    answer: "Berlin Wall"
+  - question: "Who wrote the Declaration of Independence?"
+    answer: "Thomas Jefferson"
+  - question: "Which empire built the Colosseum?"
+    answer: "Roman Empire"
+  - question: "Who was known as the Maid of Orléans?"
+    answer: "Joan of Arc"
+  - question: "Which ancient civilization built pyramids?"
+    answer: "Egyptians"
+  - question: "Who conquered the Persian Empire?"
+    answer: "Alexander the Great"
+  - question: "Which war is known for trenches?"
+    answer: "World War I"
+  - question: "What year did the Titanic sink?"
+    answer: "1912"
+  - question: "Who painted the Mona Lisa?"
+    answer: "Leonardo da Vinci"
+  - question: "Which city had the Great Fire in 1666?"
+    answer: "London"
+  - question: "Who was the first man on the moon?"
+    answer: "Neil Armstrong"
+  - question: "Which empire was ruled by Genghis Khan?"
+    answer: "Mongol Empire"
+  - question: "Where is the Great Wall located?"
+    answer: "China"
+  - question: "Which war was fought between the North and South in the USA?"
+    answer: "Civil War"
+  - question: "Who is known for his theory of relativity?"
+    answer: "Albert Einstein"
+  - question: "What ship brought pilgrims to America?"
+    answer: "Mayflower"
+  - question: "Which revolution started in 1789?"
+    answer: "French Revolution"
+  fakeAnswers:
+  - "Totally last year"
+  - "Probably a dragon"
+  - "5 swords and a shield"
+  - "Pizza delivery delay"
+  - "Maybe Mars"
+  - "Elephants running"
+  - "3 kings and a queen"
+  - "A giant hotdog"
+  - "Sounds like summer"
+  - "Ice cream time"
+  - "Bananas in pajamas"
+  - "Fireworks festival"
+  - "A long siesta"
+  - "Ghost pirates"
+  - "Knight’s dinner party"
+  - "The sunken treasure"
+  - "Definitely not Tuesday"
+  - "Moon cheese expedition"
+  - "A royal pancake"
+  - "Secret unicorn society"

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Chemistry
   m_EditorClassIdentifier: 
   displayName: Chemistry
+  entries: {fileID: 11400000, guid: 69b58488ead34754585fa6807e7511b7, type: 2}

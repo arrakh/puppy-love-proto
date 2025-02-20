@@ -14,12 +14,16 @@ public class QuizController : MonoBehaviour
 {
     public float baseTimer = 5f;
     public int quizCount = 10;
+    public int passingGrade = 7;
     public int otherAnswerCount = 7;
     public int fakeAnswerCount = 4;
     public int colorCount;
-    
+
+    public BrainstormAnswer brainstormAnswer;
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI statusText;
+    public TextMeshProUGUI resultText;
+    public GameObject finalScreen;
     public Image questionBg;
     public QuizEntries currentEntry;
     public Timer timer;
@@ -36,12 +40,19 @@ public class QuizController : MonoBehaviour
     private TaskCompletionSource<string> quizAnswerTsc = new();
     private int correctCount, wrongCount;
 
-    public event Action onNewQuiz;
+    public bool HasPassed => correctCount >= passingGrade;
     
     public string CurrentAnswer => currentQuiz.answer;
 
-    private IEnumerator StartQuiz()
+    public IEnumerator StartQuiz(QuizEntries entries)
     {
+        currentEntry = entries;
+
+        correctCount = 0;
+        wrongCount = 0;
+        
+        finalScreen.gameObject.SetActive(false);
+
         QueueQuiz(currentEntry);
         
         UpdateStatus();
@@ -57,7 +68,7 @@ public class QuizController : MonoBehaviour
 
             timer.Set(baseTimer);
             
-            onNewQuiz?.Invoke();
+            brainstormAnswer.ClearAnswers();
             
             yield return new WaitUntil(HasProgressedQuiz);
 
@@ -72,8 +83,14 @@ public class QuizController : MonoBehaviour
 
             UpdateStatus();
         }
+        
+        timer.Set(0f);
 
-        yield break;
+        brainstormAnswer.ClearAll();
+        finalScreen.gameObject.SetActive(true);
+        resultText.text = $"{correctCount} / {quizCount} correct, " + (HasPassed ? "<color=green>You Passed!" : "<color=red>You Failed!");
+        
+        yield return new WaitForSeconds(5f);
     }
 
     private void DetermineColors()
@@ -106,7 +123,8 @@ public class QuizController : MonoBehaviour
     private void UpdateStatus()
     {
         var progress = wrongCount + correctCount + 1;
-        statusText.text = $"Question #{progress} / {quizQueue.Count} " +
+        statusText.text = $"Question #{progress} / {quizCount} " +
+                          $"| Passing Grade: {passingGrade} correct" +
                           $"| <color=green>Correct: {correctCount} </color>" +
                           $"| <color=red>Wrong: {wrongCount} </color>";
     }
