@@ -1,5 +1,9 @@
 INCLUDE love.ink
 INCLUDE dinner.ink
+INCLUDE break.ink
+INCLUDE variables.ink
+
+
 
 === morning ===
 
@@ -13,3 +17,21 @@ Yawn... \<i>(Click anywhere to continue) #bg black #box left
 } 
 
 -> END
+
+////UNITY FUNCTIONS
+
+=== function AddMood(delta)
+~ AddMood(delta)
+-> DONE
+
+=== function AddLogic(float delta)
+~ AddLogic(delta)
+-> DONE
+
+=== function AddStressLevel(int delta) 
+~ AddStressLevel(delta)
+-> DONE
+
+=== function AddStressLevel()
+~ AddStressLevel(1)
+-> DONE

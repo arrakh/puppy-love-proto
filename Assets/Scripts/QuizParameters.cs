@@ -11,7 +11,6 @@ namespace DefaultNamespace
         public int passingGrade = 2;
         public int otherAnswersCount = 4;
         public int fakeAnswersCount = 3;
-        public int colorCount = 4;
         public float drainPerFocus = 1.3f;
         public float classLogicToMoodRatio = 0.7f;
     }

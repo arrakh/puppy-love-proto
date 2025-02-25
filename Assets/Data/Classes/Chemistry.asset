@@ -18,8 +18,7 @@ MonoBehaviour:
     baseTimer: 14
     quizCount: 5
     passingGrade: 3
-    otherAnswersCount: 4
-    fakeAnswersCount: 3
-    colorCount: 4
+    otherAnswersCount: 2
+    fakeAnswersCount: 1
     drainPerFocus: 1
     classLogicToMoodRatio: 1

@@ -10,8 +10,6 @@ namespace DefaultNamespace
 {
     public class BrainstormAnswer : MonoBehaviour
     {
-        public float distractionPercentChance = 20f;
-        public int distractionCount = 1;
         public float drainPerFocus = 1.3f;
         public float classLogicToMoodRatio = 0.7f;
 
@@ -68,9 +66,10 @@ namespace DefaultNamespace
                 
             spawnedAnswers.Add(button);
 
-            var shouldSpawnDistraction = Random.value * 100f < distractionPercentChance;
+            var shouldSpawnDistraction = Random.value < GetDistractionChance(gameController.stressLevel);
             if (!shouldSpawnDistraction) return;
 
+            var distractionCount = GetDistractionCount(gameController.stressLevel);
             var distractions = quizController.stressDistractions.OrderBy(_ => Random.value).Take(distractionCount);
             foreach (var distraction in distractions)
             {
@@ -119,5 +118,24 @@ namespace DefaultNamespace
 
             brainstormButton.ApplyParameters(parameters);
         }
+
+        private float GetDistractionChance(int level)
+            => level switch
+            {
+                1 => 0.2f,
+                2 => 0.5f,
+                3 or 4 => 1f,
+                _ => 0f
+            };
+
+        private int GetDistractionCount(int level)
+            => level switch
+            {
+                1 => 1,
+                2 => 1,
+                3 => 2,
+                4 => 3,
+                _ => 0
+            };
     }
 }

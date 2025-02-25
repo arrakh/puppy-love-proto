@@ -11,6 +11,7 @@ namespace DefaultNamespace
     {
         public float logic = 10f;
         public float mood = 10f;
+        public int stressLevel = 0;
         
         public DayData[] daysData;
         public QuizController quizController;

@@ -17,7 +17,6 @@ public class QuizController : MonoBehaviour
     public int passingGrade = 2;
     public int otherAnswersCount = 4;
     public int fakeAnswersCount = 3;
-    public int colorCount = 4;
 
     public BrainstormAnswer brainstormAnswer;
     public TextMeshProUGUI questionText;
@@ -31,11 +30,10 @@ public class QuizController : MonoBehaviour
     public Color[] colors;
     public string[] stressDistractions;
 
-    private Color currentColor;
-
-    private Queue<(Quiz, Color)> quizQueue = new();
+    private Queue<Quiz> quizQueue = new();
     private Quiz currentQuiz;
-    private List<QuizGameAnswer> answerPool = new(); 
+    private List<QuizGameAnswer> answerPool = new();
+    private List<Color> answerColorPool = new();
 
     private TaskCompletionSource<string> quizAnswerTsc = new();
     private int correctCount, wrongCount;
@@ -49,7 +47,6 @@ public class QuizController : MonoBehaviour
         quizHolder.gameObject.SetActive(true);
 
         ApplyParameters(parameters);
-        brainstormAnswer.ApplyParameters(parameters);
         
         currentEntry = entries;
 
@@ -65,10 +62,10 @@ public class QuizController : MonoBehaviour
         while (quizQueue.Count > 0)
         {
             quizAnswerTsc = new();
-            var (quiz, color) = quizQueue.Dequeue();
-            currentQuiz = quiz;
-            questionBg.color = color;
+            currentQuiz = quizQueue.Dequeue();
             questionText.text = currentQuiz.question;
+
+            GenerateAnswerPool();
 
             timer.Set(baseTimer);
             
@@ -97,6 +94,32 @@ public class QuizController : MonoBehaviour
         yield return new WaitForSeconds(3f);
     }
 
+    private void GenerateAnswerPool()
+    {
+        answerPool.Clear();
+
+        var colorToUse = colors.OrderBy(_ => Random.value).Take(1 + otherAnswersCount + fakeAnswersCount).ToList();
+        var colorQueue = new Queue<Color>();
+        foreach (var color in colorToUse) colorQueue.Enqueue(color);
+
+        var currentColor = colorQueue.Dequeue();
+        questionBg.color = currentColor;
+        
+        answerPool.Add(new (currentQuiz.answer, currentColor));
+
+        //Other Answers
+        var minOtherAnswerCount = Mathf.Min(currentEntry.entries.Length, otherAnswersCount);
+        var otherAnswers = currentEntry.entries.Select(x => x.answer)
+            .OrderBy(_ => Random.value).Take(minOtherAnswerCount);
+
+        foreach (var answer in otherAnswers) answerPool.Add(new (answer, colorQueue.Dequeue()));
+
+        //Fake Answers
+        var fakeAnswers = currentEntry.fakeAnswers.Take(fakeAnswersCount)
+            .Select(x => new QuizGameAnswer(x, colorQueue.Dequeue()));
+        answerPool.AddRange(fakeAnswers);
+    }
+
     private void ApplyParameters(QuizParameters parameters)
     {
         baseTimer = parameters.baseTimer;
@@ -104,7 +127,8 @@ public class QuizController : MonoBehaviour
         passingGrade = parameters.passingGrade;
         otherAnswersCount = parameters.otherAnswersCount;
         fakeAnswersCount = parameters.fakeAnswersCount;
-        colorCount = parameters.colorCount;
+        
+        brainstormAnswer.ApplyParameters(parameters);
     }
 
     private void UpdateStatus()
@@ -118,26 +142,11 @@ public class QuizController : MonoBehaviour
 
     private void InitializeQuiz(QuizEntries quizEntries)
     {
-        answerPool.Clear();
         quizQueue.Clear();
-
-        var shuffled = quizEntries.entries
-            .OrderBy(_ => Random.value).ToList();
-
-        var randomColors = colors.OrderBy(_ => Random.value).ToList();
-        
-        var length = Mathf.Min(shuffled.Count, quizCount + fakeAnswersCount);
-
-        for (var i = 0; i < length; i++)
+        for (int i = 0; i < quizCount; i++)
         {
-            var entry = shuffled[i];
-
-            var randomColor = randomColors[i % randomColors.Count];
-            
-            answerPool.Add(new (entry.answer, randomColor));
-
-            if (i >= quizCount) continue;
-            quizQueue.Enqueue((entry, randomColor));
+            var entry = quizEntries.entries[i];
+            quizQueue.Enqueue(entry);
         }
     }
 
@@ -146,8 +155,6 @@ public class QuizController : MonoBehaviour
     public void Answer(string answer) => quizAnswerTsc?.SetResult(answer);
 
     public List<QuizGameAnswer> GetAnswerPool() => answerPool;
-
-    public Color GetCurrentColor() => currentColor;
 
     public void Clear()
     {
