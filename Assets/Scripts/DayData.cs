@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
-    [CreateAssetMenu(menuName = "Day Data")]
-    public class DayData : ScriptableObject
+    [Serializable]
+    public class DayData
     {
         public string dayName;
         public SchoolClassData[] classes;

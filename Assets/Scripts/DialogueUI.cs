@@ -35,6 +35,12 @@ namespace DefaultNamespace
                 if (storyTag.StartsWith("bg")) SetBackground(storyTag.Split(' ')[1]);
             }
         }
+
+        public void SetEmpty()
+        {
+            SetBackground("none");
+            PositionBox("none");
+        }
         
         private void SetBackground(string background)
         {

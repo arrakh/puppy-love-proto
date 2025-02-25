@@ -2,8 +2,29 @@ INCLUDE love.ink
 INCLUDE dinner.ink
 INCLUDE break.ink
 INCLUDE variables.ink
+INCLUDE activities.ink
+INCLUDE functions.ink
 
 
+
+////TAGS
+//#bg (name)
+//changes background displayed in the dialog
+//names:
+//- black
+//- dinner
+//- break
+//- school
+//- dinner
+
+//#box (position)
+//changes the text box displayed in the dialog
+//positions:
+//- left
+//- right
+//- event
+
+-> break
 
 === morning ===
 
@@ -17,21 +38,3 @@ Yawn... \<i>(Click anywhere to continue) #bg black #box left
 } 
 
 -> END
-
-////UNITY FUNCTIONS
-
-=== function AddMood(delta)
-~ AddMood(delta)
--> DONE
-
-=== function AddLogic(float delta)
-~ AddLogic(delta)
--> DONE
-
-=== function AddStressLevel(int delta) 
-~ AddStressLevel(delta)
--> DONE
-
-=== function AddStressLevel()
-~ AddStressLevel(1)
--> DONE

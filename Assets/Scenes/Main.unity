@@ -965,16 +965,18 @@ MonoBehaviour:
   logic: 10
   mood: 10
   stressLevel: 2
-  daysData:
-  - {fileID: 11400000, guid: 614f3175758024940b66275dfb794c97, type: 2}
-  - {fileID: 11400000, guid: 1f97d2c6228888242a40e9ae1215b6b0, type: 2}
-  - {fileID: 11400000, guid: 015f27ef2ee26bd4da695d9467be8145, type: 2}
+  weeks:
+  - {fileID: 11400000, guid: 33af7cd53119d7841ace6f1aa94c6edd, type: 2}
   quizController: {fileID: 1236522560}
   plannerUi: {fileID: 1895714531}
   transitionUi: {fileID: 296779913}
   story: {fileID: 4900000, guid: ff55d416e499aa747988ed11c9659c73, type: 3}
   storyController: {fileID: 2125107768}
+  variablesController: {fileID: 619243841}
+  functionsController: {fileID: 619243842}
   dialogueUi: {fileID: 2125107769}
+  hadFirstMeeting: 0
+  lastClass: {fileID: 0}
 --- !u!1 &267290750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,6 +2896,67 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &619243840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619243843}
+  - component: {fileID: 619243842}
+  - component: {fileID: 619243841}
+  m_Layer: 0
+  m_Name: StoryControllers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &619243841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619243840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f8e6935cd0423f9d1c77694a6341cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyController: {fileID: 2125107768}
+  gameController: {fileID: 263527303}
+--- !u!114 &619243842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619243840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909e0eafaf8e409ab20b84426d985535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 263527303}
+  storyController: {fileID: 2125107768}
+--- !u!4 &619243843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619243840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -8640,3 +8703,4 @@ SceneRoots:
   - {fileID: 296779917}
   - {fileID: 2069525537}
   - {fileID: 263527302}
+  - {fileID: 619243843}
