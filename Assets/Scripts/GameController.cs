@@ -20,13 +20,20 @@ namespace DefaultNamespace
         public TextAsset story;
         public InkStoryController storyController;
         public StoryVariablesController variablesController;
-        public StoryFunctionsController functionsController;
         public DialogueUI dialogueUi;
 
         public bool hadFirstMeeting = false;
         public SchoolClassData lastClass;
         
         public TaskCompletionSource<int> scheduleCompleteTsc = new();
+
+        private HashSet<string> unlockedActivities = new()
+        {
+            "memory",
+            "appreciate",
+            "writing",
+            "exercise"
+        };
 
         public enum State
         {
@@ -62,7 +69,7 @@ namespace DefaultNamespace
                 
             SetState(State.PLANNING);
 
-            plannerUi.Display(day);
+            plannerUi.Display(day, unlockedActivities);
             plannerUi.SetIsPlanningMode(true);
             plannerUi.DisplayProgress(0);
 
@@ -160,11 +167,18 @@ namespace DefaultNamespace
 
         }
 
-        private IEnumerator DoActivity(FreeActivityData activityData)
+        private IEnumerator DoActivity(ActivityData data)
         {
-            Debug.Log($"DOING ACTIVITY: {activityData.displayName}");
+            //yield return plannerUi.PlannerAnimation
+            yield return transitionUi.WaitTransitionIn(data.displayName, 0.6f, 2.4f);
+            
+            dialogueUi.SetEmpty();
+            SetState(State.DIALOGUE);
+            yield return transitionUi.WaitTransitionOut(0.25f);
 
-            yield return new WaitForSeconds(2f);
+            yield return storyController.StartStory($"activity_{data.activityId}");
+
+            SetState(State.PLANNING);
             
             yield break;
         }
@@ -201,6 +215,12 @@ namespace DefaultNamespace
         {
             stressLevel = Mathf.Clamp(stressLevel + delta, 0, int.MaxValue);
             variablesController.SyncVariables();
+        }
+
+        public void UnlockActivity(string id)
+        {
+            if (!unlockedActivities.Add(id)) return;
+            
         }
     }
 }

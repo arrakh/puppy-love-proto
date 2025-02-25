@@ -973,7 +973,6 @@ MonoBehaviour:
   story: {fileID: 4900000, guid: ff55d416e499aa747988ed11c9659c73, type: 3}
   storyController: {fileID: 2125107768}
   variablesController: {fileID: 619243841}
-  functionsController: {fileID: 619243842}
   dialogueUi: {fileID: 2125107769}
   hadFirstMeeting: 0
   lastClass: {fileID: 0}
@@ -4408,20 +4407,29 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 13.574998
+      outSlope: 13.574998
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.16574587
+    - serializedVersion: 3
+      time: 0.1
+      value: 0.49885717
+      inSlope: 0.9809411
+      outSlope: 0.9809411
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.13580248
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 0.33274645
+      outSlope: 0.33274645
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.2504409
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

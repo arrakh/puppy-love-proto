@@ -11,7 +11,7 @@ namespace DefaultNamespace
         public Button button;
         public int slotIndex;
         
-        public FreeActivityData activityData = null;
+        public ActivityData activityData = null;
 
         public bool IsEmpty => activityData == null;
         
@@ -30,7 +30,7 @@ namespace DefaultNamespace
             buttonText.text = IsEmpty ? "Pick Activity" : activityData.displayName;
         }
         
-        public void Display(FreeActivityData data)
+        public void Display(ActivityData data)
         {
             activityData = data;
             buttonText.text = nameText.text = data.displayName;
