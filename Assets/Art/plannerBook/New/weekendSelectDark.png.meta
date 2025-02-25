@@ -1,0 +1,2158 @@
+fileFormatVersion: 2
+guid: 668bca8d3bc4467489715c074f62b6cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 173292728767577542
+    second: weekendSelectDark_0
+  - first:
+      213: -8119188337245496735
+    second: weekendSelectDark_1
+  - first:
+      213: 4747767999647564567
+    second: weekendSelectDark_2
+  - first:
+      213: -3619641675000097381
+    second: weekendSelectDark_3
+  - first:
+      213: 7591926798344976015
+    second: weekendSelectDark_4
+  - first:
+      213: -5838831570048590951
+    second: weekendSelectDark_5
+  - first:
+      213: 2151395230317286525
+    second: weekendSelectDark_6
+  - first:
+      213: -6824155704488271140
+    second: weekendSelectDark_7
+  - first:
+      213: 327976620849281296
+    second: weekendSelectDark_8
+  - first:
+      213: -8715958740666490762
+    second: weekendSelectDark_9
+  - first:
+      213: -6379429753937114177
+    second: weekendSelectDark_10
+  - first:
+      213: 5042481609475780688
+    second: weekendSelectDark_11
+  - first:
+      213: 1495779146646600573
+    second: weekendSelectDark_12
+  - first:
+      213: -5548626909111396800
+    second: weekendSelectDark_13
+  - first:
+      213: 2689614200022078369
+    second: weekendSelectDark_14
+  - first:
+      213: -7170006473497558604
+    second: weekendSelectDark_15
+  - first:
+      213: -3857745576679216398
+    second: weekendSelectDark_16
+  - first:
+      213: 4189718185224924647
+    second: weekendSelectDark_17
+  - first:
+      213: 5463844259515765713
+    second: weekendSelectDark_18
+  - first:
+      213: -5315353327128058836
+    second: weekendSelectDark_19
+  - first:
+      213: -3507400237044747985
+    second: weekendSelectDark_20
+  - first:
+      213: -710775351438989587
+    second: weekendSelectDark_21
+  - first:
+      213: 1837721660659305270
+    second: weekendSelectDark_22
+  - first:
+      213: -1978261061061385382
+    second: weekendSelectDark_23
+  - first:
+      213: 2042707616789304492
+    second: weekendSelectDark_24
+  - first:
+      213: -3408051087826114479
+    second: weekendSelectDark_25
+  - first:
+      213: -8086575738686168776
+    second: weekendSelectDark_26
+  - first:
+      213: 6212676020336067614
+    second: weekendSelectDark_27
+  - first:
+      213: 5428940569942742143
+    second: weekendSelectDark_28
+  - first:
+      213: -245234203622416928
+    second: weekendSelectDark_29
+  - first:
+      213: -642217355039277048
+    second: weekendSelectDark_30
+  - first:
+      213: -514048407624957228
+    second: weekendSelectDark_31
+  - first:
+      213: 5782839112091366972
+    second: weekendSelectDark_32
+  - first:
+      213: 6913408246677458336
+    second: weekendSelectDark_33
+  - first:
+      213: -4916197540469450373
+    second: weekendSelectDark_34
+  - first:
+      213: -6170864398509329757
+    second: weekendSelectDark_35
+  - first:
+      213: 8342363189602357629
+    second: weekendSelectDark_36
+  - first:
+      213: -5795476865190227555
+    second: weekendSelectDark_37
+  - first:
+      213: -5694504833188599907
+    second: weekendSelectDark_38
+  - first:
+      213: 8437372023497492362
+    second: weekendSelectDark_39
+  - first:
+      213: -1085310315306186659
+    second: weekendSelectDark_40
+  - first:
+      213: 3576116649046333583
+    second: weekendSelectDark_41
+  - first:
+      213: -8579715150548176822
+    second: weekendSelectDark_42
+  - first:
+      213: 7778724404751440752
+    second: weekendSelectDark_43
+  - first:
+      213: 44876937704625209
+    second: weekendSelectDark_44
+  - first:
+      213: 7418247617722946274
+    second: weekendSelectDark_45
+  - first:
+      213: -8992995759446336464
+    second: weekendSelectDark_46
+  - first:
+      213: -1845753284341750755
+    second: weekendSelectDark_47
+  - first:
+      213: -8216777759029146773
+    second: weekendSelectDark_48
+  - first:
+      213: -4614828624673101021
+    second: weekendSelectDark_49
+  - first:
+      213: 2239442091576916413
+    second: weekendSelectDark_50
+  - first:
+      213: 7403480120297794220
+    second: weekendSelectDark_51
+  - first:
+      213: 5549996406487067978
+    second: weekendSelectDark_52
+  - first:
+      213: 3286023705658577447
+    second: weekendSelectDark_53
+  - first:
+      213: 6547366246967488534
+    second: weekendSelectDark_54
+  - first:
+      213: -5669811645173289824
+    second: weekendSelectDark_55
+  - first:
+      213: 3413040097276490993
+    second: weekendSelectDark_56
+  - first:
+      213: 8276521361277923180
+    second: weekendSelectDark_57
+  - first:
+      213: 2927838998431922638
+    second: weekendSelectDark_58
+  - first:
+      213: -7264102705100502646
+    second: weekendSelectDark_59
+  - first:
+      213: 5256755207257904860
+    second: weekendSelectDark_60
+  - first:
+      213: -8253022251851356615
+    second: weekendSelectDark_61
+  - first:
+      213: -874335679109078649
+    second: weekendSelectDark_62
+  - first:
+      213: 3415883472701077911
+    second: weekendSelectDark_63
+  - first:
+      213: 2045707459361828114
+    second: weekendSelectDark_64
+  - first:
+      213: 844295231805694993
+    second: weekendSelectDark_65
+  - first:
+      213: 2471372921780364155
+    second: weekendSelectDark_66
+  - first:
+      213: 5285602837333252202
+    second: weekendSelectDark_67
+  - first:
+      213: 3414134114334362122
+    second: weekendSelectDark_68
+  - first:
+      213: 2709174147014272597
+    second: weekendSelectDark_69
+  - first:
+      213: 138006622577795173
+    second: weekendSelectDark_70
+  - first:
+      213: -9174158067483140771
+    second: weekendSelectDark_71
+  - first:
+      213: -2305355693662913734
+    second: weekendSelectDark_72
+  - first:
+      213: 868360355320351684
+    second: weekendSelectDark_73
+  - first:
+      213: -5602389172133766104
+    second: weekendSelectDark_74
+  - first:
+      213: 5332342266245021864
+    second: weekendSelectDark_75
+  - first:
+      213: -6294699943198567381
+    second: weekendSelectDark_76
+  - first:
+      213: -7511303144646769280
+    second: weekendSelectDark_77
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: weekendSelectDark_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 499
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd795491d8a76200800000000000000
+      internalID: 173292728767577542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 499
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16adcfd7939d25f80800000000000000
+      internalID: -8119188337245496735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 499
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713c5f647d573e140800000000000000
+      internalID: 4747767999647564567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 499
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b955b63031374cdc0800000000000000
+      internalID: -3619641675000097381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 499
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86fe180331fb5960800000000000000
+      internalID: 7591926798344976015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 499
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bdaeb5f9d48fea0800000000000000
+      internalID: -5838831570048590951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 499
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74188a309a4bdd10800000000000000
+      internalID: 2151395230317286525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 499
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2650eea8abb41a0800000000000000
+      internalID: -6824155704488271140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 483
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019ba5cbff43d8400800000000000000
+      internalID: 327976620849281296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 483
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670ec9954b1ba0780800000000000000
+      internalID: -8715958740666490762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 467
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb450f3076b777a0800000000000000
+      internalID: -6379429753937114177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_11
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 467
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0507e3fbe4e7af540800000000000000
+      internalID: 5042481609475780688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 451
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bbe4a753312c410800000000000000
+      internalID: 1495779146646600573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 451
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046dd3b59315ff2b0800000000000000
+      internalID: -5548626909111396800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 436
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3992f5ddd635520800000000000000
+      internalID: 2689614200022078369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 436
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b14de5c9150f7c90800000000000000
+      internalID: -7170006473497558604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa633456d8867ac0800000000000000
+      internalID: -3857745576679216398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 420
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed635bcd7ed42a30800000000000000
+      internalID: 4189718185224924647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d39e74c76973db40800000000000000
+      internalID: 5463844259515765713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 404
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2467d89f421c36b0800000000000000
+      internalID: -5315353327128058836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21b3d14116335fc0800000000000000
+      internalID: -3507400237044747985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 388
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6206e6591d226f0800000000000000
+      internalID: -710775351438989587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 373
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b83ab1d16e08910800000000000000
+      internalID: 1837721660659305270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 373
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53e276db0ecb84e0800000000000000
+      internalID: -1978261061061385382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 357
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca416b631c7295c10800000000000000
+      internalID: 2042707616789304492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_25
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 357
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158adbd979b24b0d0800000000000000
+      internalID: -3408051087826114479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 341
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831a15ec536b6cf80800000000000000
+      internalID: -8086575738686168776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 341
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1408b0acebd73650800000000000000
+      internalID: 6212676020336067614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74d4224fa8775b40800000000000000
+      internalID: 5428940569942742143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 325
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed5f468ac0c89cf0800000000000000
+      internalID: -245234203622416928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8000b4cd7b26617f0800000000000000
+      internalID: -642217355039277048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 310
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2c82262bbbdd8f0800000000000000
+      internalID: -514048407624957228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36f07d9885c04050800000000000000
+      internalID: 5782839112091366972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 294
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad477aeb2c51ff50800000000000000
+      internalID: 6913408246677458336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b795ba2526826cbb0800000000000000
+      internalID: -4916197540469450373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_35
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 278
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a23fb1368fac5aa0800000000000000
+      internalID: -6170864398509329757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d711b870f1706c370800000000000000
+      internalID: 8342363189602357629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 262
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9197523f74529fa0800000000000000
+      internalID: -5795476865190227555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 247
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d976c06660e09f0b0800000000000000
+      internalID: -5694504833188599907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 247
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87036af621971570800000000000000
+      internalID: 8437372023497492362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d588b19b40430f0f0800000000000000
+      internalID: -1085310315306186659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_41
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 231
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8854cd252be0a130800000000000000
+      internalID: 3576116649046333583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40f981278abee880800000000000000
+      internalID: -8579715150548176822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_43
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 215
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b1fd6f1a493fb60800000000000000
+      internalID: 7778724404751440752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 199
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934dd7a465f6f9000800000000000000
+      internalID: 44876937704625209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_45
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 199
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2934e97e8e2f660800000000000000
+      internalID: 7418247617722946274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c5b93f006723380800000000000000
+      internalID: -8992995759446336464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_47
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 184
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14acc7ca219266e0800000000000000
+      internalID: -1845753284341750755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bccba992428fd80800000000000000
+      internalID: -8216777759029146773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_49
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 168
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b2e07f0d5d4ffb0800000000000000
+      internalID: -4614828624673101021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9ff7b97b8141f10800000000000000
+      internalID: 2239442091576916413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 152
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa2400b1f17eb660800000000000000
+      internalID: 7403480120297794220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d2b59935c850d40800000000000000
+      internalID: 5549996406487067978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_53
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 136
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722da43762d4a9d20800000000000000
+      internalID: 3286023705658577447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61031e489eaecda50800000000000000
+      internalID: 6547366246967488534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 121
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aca2124958c051b0800000000000000
+      internalID: -5669811645173289824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4745aa2ed8d5f20800000000000000
+      internalID: 3413040097276490993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 105
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f27e2c35c1cd270800000000000000
+      internalID: 8276521361277923180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9f1158e06c1a820800000000000000
+      internalID: 2927838998431922638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_59
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 89
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89c78a9319b03b90800000000000000
+      internalID: -7264102705100502646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6dacf620fb3f840800000000000000
+      internalID: 5256755207257904860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_61
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 73
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93661030dff577d80800000000000000
+      internalID: -8253022251851356615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781e040155cbdd3f0800000000000000
+      internalID: -874335679109078649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_63
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 58
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799b9789be7a76f20800000000000000
+      internalID: 3415883472701077911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21de0ad7810d36c10800000000000000
+      internalID: 2045707459361828114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_65
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 42
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114a5514a0a87bb00800000000000000
+      internalID: 844295231805694993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73ec3614941c4220800000000000000
+      internalID: 2471372921780364155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 26
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a689b07b6cb3a5940800000000000000
+      internalID: 5285602837333252202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a417c53e0716f20800000000000000
+      internalID: 3414134114334362122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_69
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 10
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556257b688be89520800000000000000
+      internalID: 2709174147014272597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560a663ca4c4ae100800000000000000
+      internalID: 138006622577795173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_71
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d126a28d7dea080800000000000000
+      internalID: -9174158067483140771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_72
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b3c4ef53bb100e0800000000000000
+      internalID: -2305355693662913734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_73
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbc6e374290d0c00800000000000000
+      internalID: 868360355320351684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_74
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cd87d0bb05042b0800000000000000
+      internalID: -5602389172133766104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_75
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a006580a09400a40800000000000000
+      internalID: 5332342266245021864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_76
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b245afd90cbb4a8a0800000000000000
+      internalID: -6294699943198567381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weekendSelectDark_77
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0850e07269d72c790800000000000000
+      internalID: -7511303144646769280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      weekendSelectDark_0: 173292728767577542
+      weekendSelectDark_1: -8119188337245496735
+      weekendSelectDark_10: -6379429753937114177
+      weekendSelectDark_11: 5042481609475780688
+      weekendSelectDark_12: 1495779146646600573
+      weekendSelectDark_13: -5548626909111396800
+      weekendSelectDark_14: 2689614200022078369
+      weekendSelectDark_15: -7170006473497558604
+      weekendSelectDark_16: -3857745576679216398
+      weekendSelectDark_17: 4189718185224924647
+      weekendSelectDark_18: 5463844259515765713
+      weekendSelectDark_19: -5315353327128058836
+      weekendSelectDark_2: 4747767999647564567
+      weekendSelectDark_20: -3507400237044747985
+      weekendSelectDark_21: -710775351438989587
+      weekendSelectDark_22: 1837721660659305270
+      weekendSelectDark_23: -1978261061061385382
+      weekendSelectDark_24: 2042707616789304492
+      weekendSelectDark_25: -3408051087826114479
+      weekendSelectDark_26: -8086575738686168776
+      weekendSelectDark_27: 6212676020336067614
+      weekendSelectDark_28: 5428940569942742143
+      weekendSelectDark_29: -245234203622416928
+      weekendSelectDark_3: -3619641675000097381
+      weekendSelectDark_30: -642217355039277048
+      weekendSelectDark_31: -514048407624957228
+      weekendSelectDark_32: 5782839112091366972
+      weekendSelectDark_33: 6913408246677458336
+      weekendSelectDark_34: -4916197540469450373
+      weekendSelectDark_35: -6170864398509329757
+      weekendSelectDark_36: 8342363189602357629
+      weekendSelectDark_37: -5795476865190227555
+      weekendSelectDark_38: -5694504833188599907
+      weekendSelectDark_39: 8437372023497492362
+      weekendSelectDark_4: 7591926798344976015
+      weekendSelectDark_40: -1085310315306186659
+      weekendSelectDark_41: 3576116649046333583
+      weekendSelectDark_42: -8579715150548176822
+      weekendSelectDark_43: 7778724404751440752
+      weekendSelectDark_44: 44876937704625209
+      weekendSelectDark_45: 7418247617722946274
+      weekendSelectDark_46: -8992995759446336464
+      weekendSelectDark_47: -1845753284341750755
+      weekendSelectDark_48: -8216777759029146773
+      weekendSelectDark_49: -4614828624673101021
+      weekendSelectDark_5: -5838831570048590951
+      weekendSelectDark_50: 2239442091576916413
+      weekendSelectDark_51: 7403480120297794220
+      weekendSelectDark_52: 5549996406487067978
+      weekendSelectDark_53: 3286023705658577447
+      weekendSelectDark_54: 6547366246967488534
+      weekendSelectDark_55: -5669811645173289824
+      weekendSelectDark_56: 3413040097276490993
+      weekendSelectDark_57: 8276521361277923180
+      weekendSelectDark_58: 2927838998431922638
+      weekendSelectDark_59: -7264102705100502646
+      weekendSelectDark_6: 2151395230317286525
+      weekendSelectDark_60: 5256755207257904860
+      weekendSelectDark_61: -8253022251851356615
+      weekendSelectDark_62: -874335679109078649
+      weekendSelectDark_63: 3415883472701077911
+      weekendSelectDark_64: 2045707459361828114
+      weekendSelectDark_65: 844295231805694993
+      weekendSelectDark_66: 2471372921780364155
+      weekendSelectDark_67: 5285602837333252202
+      weekendSelectDark_68: 3414134114334362122
+      weekendSelectDark_69: 2709174147014272597
+      weekendSelectDark_7: -6824155704488271140
+      weekendSelectDark_70: 138006622577795173
+      weekendSelectDark_71: -9174158067483140771
+      weekendSelectDark_72: -2305355693662913734
+      weekendSelectDark_73: 868360355320351684
+      weekendSelectDark_74: -5602389172133766104
+      weekendSelectDark_75: 5332342266245021864
+      weekendSelectDark_76: -6294699943198567381
+      weekendSelectDark_77: -7511303144646769280
+      weekendSelectDark_8: 327976620849281296
+      weekendSelectDark_9: -8715958740666490762
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
