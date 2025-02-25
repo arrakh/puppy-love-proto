@@ -11,13 +11,16 @@ namespace DefaultNamespace
         public CanvasGroup fadeGroup;
 
         public TextMeshProUGUI titleText;
+        private Tween fade;
         
         public void TransitionIn(string title, float duration)
         {
             titleText.text = title;
 
             fadeGroup.alpha = 0f;
-            fadeGroup.DOFade(1f, duration);
+            
+            fade?.Kill();
+            fade = fadeGroup.DOFade(1f, duration);
         }
 
         public IEnumerator WaitTransitionIn(string title, float duration, float stayDuration = 0f)
@@ -28,7 +31,8 @@ namespace DefaultNamespace
 
         public void TransitionOut(float duration)
         {
-            fadeGroup.DOFade(0f, duration);
+            fade?.Kill();
+            fade = fadeGroup.DOFade(0f, duration);
         }
 
         public IEnumerator WaitTransitionOut(float duration, float stayDuration = 0f)

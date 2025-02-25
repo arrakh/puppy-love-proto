@@ -20,9 +20,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 48517c8c49a4f354eb4d386daf61cb6c, type: 2}
   - dayName: Tuesday
     classes:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: ca835cc932563634cade5f62a5708594, type: 2}
+    - {fileID: 11400000, guid: 402c09ac1d5d35f4d959af1e3427ab0f, type: 2}
+    - {fileID: 11400000, guid: 48517c8c49a4f354eb4d386daf61cb6c, type: 2}
   - dayName: Wednesday
     classes: []
   - dayName: Thursday
