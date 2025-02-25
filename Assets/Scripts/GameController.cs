@@ -20,13 +20,20 @@ namespace DefaultNamespace
         public TextAsset story;
         public InkStoryController storyController;
         public StoryVariablesController variablesController;
-        public StoryFunctionsController functionsController;
         public DialogueUI dialogueUi;
 
         public bool hadFirstMeeting = false;
         public SchoolClassData lastClass;
         
         public TaskCompletionSource<int> scheduleCompleteTsc = new();
+
+        private HashSet<string> unlockedActivities = new()
+        {
+            "memorize",
+            "appreciate",
+            "writing",
+            "exercise"
+        };
 
         public enum State
         {
@@ -62,7 +69,7 @@ namespace DefaultNamespace
                 
             SetState(State.PLANNING);
 
-            plannerUi.Display(day);
+            plannerUi.Display(day, unlockedActivities);
             plannerUi.SetIsPlanningMode(true);
             plannerUi.DisplayProgress(0);
 
@@ -77,19 +84,23 @@ namespace DefaultNamespace
             strikeCount++;
 
             //CLASSES
-            foreach (var classSlot in plannerUi.classSlots)
+            for (var i = 0; i < plannerUi.classSlots.Length; i++)
             {
+                var classSlot = plannerUi.classSlots[i];
                 yield return new WaitForSeconds(0.8f);
                 yield return DoClass(classSlot.classData);
+                variablesController.SyncVariables();
 
                 if (!hadFirstMeeting && !quizController.HasPassed)
                     yield return DoFirstMoment();
-                else yield return DoBreak();
-                    
-                plannerUi.DisplayProgress(strikeCount);  
-                strikeCount++;
+                else if (i != plannerUi.classSlots.Length) yield return DoBreak();
+
+                yield return transitionUi.WaitTransitionIn("", 0.6f);
                 
-                variablesController.SyncVariables();
+                SetState(State.PLANNING);
+                yield return transitionUi.WaitTransitionOut(1f);
+                plannerUi.DisplayProgress(strikeCount);
+                strikeCount++;
             }
 
             //SECOND AND THIRD ACTIVITY
@@ -115,8 +126,6 @@ namespace DefaultNamespace
             yield return transitionUi.WaitTransitionOut(1f);
             
             yield return storyController.StartStory("break");
-            
-            SetState(State.PLANNING);
         }
         
         private IEnumerator DoFirstMoment()
@@ -125,11 +134,6 @@ namespace DefaultNamespace
             yield return storyController.StartStory("first_moment");
             Debug.Log("FIRST MOMENT DONE");
             hadFirstMeeting = true;
-            
-            yield return transitionUi.WaitTransitionIn("", 0.6f, 2.4f);
-            SetState(State.PLANNING);
-
-            yield return transitionUi.WaitTransitionOut(1f);
         }
 
         private IEnumerator DoDinner()
@@ -156,15 +160,20 @@ namespace DefaultNamespace
             yield return transitionUi.WaitTransitionOut(3f);
 
             yield return quizController.StartQuiz(data.parameters, data.entries);
-            
-
         }
 
-        private IEnumerator DoActivity(FreeActivityData activityData)
+        private IEnumerator DoActivity(ActivityData data)
         {
-            Debug.Log($"DOING ACTIVITY: {activityData.displayName}");
+            //yield return plannerUi.PlannerAnimation
+            yield return transitionUi.WaitTransitionIn(data.displayName, 0.6f, 2.4f);
+            
+            dialogueUi.SetEmpty();
+            SetState(State.DIALOGUE);
+            yield return transitionUi.WaitTransitionOut(0.25f);
 
-            yield return new WaitForSeconds(2f);
+            yield return storyController.StartStory($"activity_{data.activityId}");
+
+            SetState(State.PLANNING);
             
             yield break;
         }
@@ -201,6 +210,12 @@ namespace DefaultNamespace
         {
             stressLevel = Mathf.Clamp(stressLevel + delta, 0, int.MaxValue);
             variablesController.SyncVariables();
+        }
+
+        public void UnlockActivity(string id)
+        {
+            if (!unlockedActivities.Add(id)) return;
+            
         }
     }
 }

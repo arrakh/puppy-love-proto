@@ -21,6 +21,7 @@ namespace DefaultNamespace
             story.BindExternalFunction("AddMood", (float delta) => gameController.AddMood(delta));
             story.BindExternalFunction("AddLogic", (float delta) => gameController.AddLogic(delta));
             story.BindExternalFunction("AddStressLevel", (int delta) => gameController.AddStressLevel(delta));
+            story.BindExternalFunction("UnlockActivity", (string id) => gameController.UnlockActivity(id));
         }
     }
 }

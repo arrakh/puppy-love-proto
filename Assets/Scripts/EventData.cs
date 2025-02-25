@@ -8,9 +8,11 @@ namespace DefaultNamespace
         public string displayName;
         
         #if UNITY_EDITOR
+        protected virtual void OnEventValidate() {}
         private void OnValidate()
         {
             if (string.IsNullOrEmpty(displayName)) displayName = name;
+            OnEventValidate();
         }
         #endif
     }

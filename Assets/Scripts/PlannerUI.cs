@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -42,6 +43,14 @@ namespace DefaultNamespace
                 bool shouldStrike = i < index;
                 var text = textToStrike[i];
                 text.fontStyle = shouldStrike ? FontStyles.Strikethrough : FontStyles.Normal;
+            }
+        }
+
+        public void DisplayTextHighlight(int index)
+        {
+            for (int i = 0; i < textToStrike.Length; i++)
+            {
+                var text = textToStrike[i];
                 text.color = i == index ? new Color(243/255f, 115/255f, 41/255f) : Color.black;
             }
         }
@@ -74,7 +83,7 @@ namespace DefaultNamespace
             {
                 selectedSlot.Display(clicked.data);
                 selectedSlot = null;
-                EvaluateConfirm();
+                EvaluateActivities();
 
                 return;
             }
@@ -86,21 +95,37 @@ namespace DefaultNamespace
                     break;
                 }
             
+            EvaluateActivities();
+        }
+
+        private void EvaluateActivities()
+        {
             EvaluateConfirm();
+
+            HashSet<string> activities = new();
+            foreach (var slot in activitySlots)
+            {
+                if (slot.activityData == null) continue;
+                activities.Add(slot.activityData.activityId);
+            }
+
+            foreach (var btn in activityButtons)
+                if (activities.Contains(btn.Id)) btn.gameObject.SetActive(false);
         }
 
         private void EvaluateConfirm()
         {
             confirmButton.interactable = false;
-
             foreach (var slot in activitySlots) if (slot.IsEmpty) return;
-
             confirmButton.interactable = true;
         }
 
-        public void Display(DayData dayData)
+        public void Display(DayData dayData, HashSet<string> unlockedActivities)
         {
             dayText.text = dayData.dayName;
+
+            foreach (var btn in activityButtons)
+                btn.gameObject.SetActive(unlockedActivities.Contains(btn.Id));
 
             foreach (var slot in activitySlots)
                 slot.DisplayEmpty();
