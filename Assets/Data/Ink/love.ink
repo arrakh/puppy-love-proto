@@ -37,4 +37,9 @@ It’s not easy, though. There’s so much to learn, and sometimes I wonder if I
 * \(They shine in a way I never expected.\\n Maybe that’s why, right now, I can’t look away.)
 
 - You walk out of the library with a strange but warm feeling #box event
+
+~ temp roll = RANDOM(5, 10) / 10.0
+~love = roll
+
+
 -> END

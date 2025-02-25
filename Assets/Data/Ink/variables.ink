@@ -5,3 +5,5 @@ VAR lastClass = "Math"
 VAR hasFirstMeeting = false
 VAR shuPronounFirst = "he"
 VAR shuPronounThird = "him"
+VAR love = 0
+VAR horrorlove = false
