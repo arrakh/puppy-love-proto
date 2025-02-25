@@ -29,12 +29,8 @@ namespace DefaultNamespace
         private Vector2 direction;
         private RectTransform boundariesRect;
 
-        public bool isDistraction;
-
-        public void Set(bool isDistractionBtn, RectTransform boundaries, Color color, string answer, Action<string> onAnswerButton)
+        public void Set(RectTransform boundaries, Color color, string answer, Action<string> onAnswerButton)
         {
-            isDistraction = isDistractionBtn;
-            
             boundariesRect = boundaries;
             hasInit = false;
             background.color = color;

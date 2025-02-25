@@ -10,13 +10,14 @@ namespace DefaultNamespace
 {
     public class BrainstormAnswer : MonoBehaviour
     {
-        public int brainstormCount = 2;
+        public float distractionPercentChance = 20f;
+        public int distractionCount = 1;
         public float drainPerFocus = 1.3f;
         public float classLogicToMoodRatio = 0.7f;
 
         public GameController gameController;
         public QuizController quizController;
-        public Button brainstormButton;
+        public BrainstormButton brainstormButton;
         public Button focusButton;
         public AnswerButton prefab;
         public RectTransform holder;
@@ -27,8 +28,9 @@ namespace DefaultNamespace
 
         private void Start()
         {
-            brainstormButton.onClick.AddListener(OnBrainstorm);
+            brainstormButton.OnBrainstorm += OnBrainstorm;
             focusButton.onClick.AddListener(OnFocus);
+            UpdateFocusVisual();
         }
 
         private void OnFocus()
@@ -57,23 +59,29 @@ namespace DefaultNamespace
 
         private void OnBrainstorm()
         {
-            var answers = quizController.GetAnswerPool()
-                .OrderBy(_ => Random.value).Take(brainstormCount);
+            var answer = quizController.GetAnswerPool()
+                .OrderBy(_ => Random.value).First();
 
-            foreach (var answer in answers)
-            {
-                var button = Instantiate(prefab, holder);
+            var button = Instantiate(prefab, holder);
 
-                var isAnswer = answer.Item1.Equals(quizController.CurrentAnswer);
-
-                var color = isAnswer ? quizController.GetCurrentColor() : quizController.GetRandomColor();
-
-                bool isDistraction = answer.Item2;
-                button.Set(isDistraction, holder, color, answer.Item1, a => quizController.Answer(a)); 
+            button.Set(holder, answer.color, answer.text, a => quizController.Answer(a)); 
                 
-                if (isDistraction) spawnedDistractions.Add(button);
-                else spawnedAnswers.Add(button);
+            spawnedAnswers.Add(button);
+
+            var shouldSpawnDistraction = Random.value * 100f < distractionPercentChance;
+            if (!shouldSpawnDistraction) return;
+
+            var distractions = quizController.stressDistractions.OrderBy(_ => Random.value).Take(distractionCount);
+            foreach (var distraction in distractions)
+            {
+                //TODO: TO PERSONALIZE DISTRACTION, SPAWN FROM SOMEWHERE ELSE, NOT ANSWER BUTTON
+                var distractionBtn = Instantiate(prefab, holder);
+                distractionBtn.Set(holder, new Color(1f, 0.43f, 0.47f), distraction, null);
+                
+                spawnedDistractions.Add(distractionBtn);
             }
+            
+            UpdateFocusVisual();
         }
 
         public void ClearAnswers()
@@ -84,12 +92,18 @@ namespace DefaultNamespace
             spawnedAnswers.Clear();
         }
 
+        private void UpdateFocusVisual()
+        {
+            focusButton.gameObject.SetActive(spawnedDistractions.Count > 0);
+        }
+
         private void ClearDistractions()
         {
             foreach (var button in spawnedDistractions)
                 Destroy(button.gameObject);
             
             spawnedDistractions.Clear();
+            UpdateFocusVisual();
         }
 
         public void ClearAll()
@@ -100,9 +114,10 @@ namespace DefaultNamespace
 
         public void ApplyParameters(QuizParameters parameters)
         {
-            brainstormCount = parameters.brainstormCount; 
             drainPerFocus = parameters.drainPerFocus; 
-            classLogicToMoodRatio = parameters.classLogicToMoodRatio; 
+            classLogicToMoodRatio = parameters.classLogicToMoodRatio;
+
+            brainstormButton.ApplyParameters(parameters);
         }
     }
 }

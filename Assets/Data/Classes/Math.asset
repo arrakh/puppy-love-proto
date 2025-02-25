@@ -15,12 +15,11 @@ MonoBehaviour:
   displayName: Math
   entries: {fileID: 11400000, guid: 1817aa1df89e8e3499f74d029eb38837, type: 2}
   parameters:
-    baseTimer: 20
+    baseTimer: 60
     quizCount: 3
     passingGrade: 2
-    otherAnswerCount: 4
-    fakeAnswerCount: 3
+    otherAnswersCount: 4
+    fakeAnswersCount: 3
     colorCount: 4
-    brainstormCount: 2
     drainPerFocus: 0.8
     classLogicToMoodRatio: 1

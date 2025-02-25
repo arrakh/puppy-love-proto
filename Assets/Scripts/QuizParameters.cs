@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
@@ -8,10 +9,9 @@ namespace DefaultNamespace
         public float baseTimer = 20f;
         public int quizCount = 3;
         public int passingGrade = 2;
-        public int otherAnswerCount = 4;
-        public int fakeAnswerCount = 3;
+        public int otherAnswersCount = 4;
+        public int fakeAnswersCount = 3;
         public int colorCount = 4;
-        public int brainstormCount = 2;
         public float drainPerFocus = 1.3f;
         public float classLogicToMoodRatio = 0.7f;
     }
