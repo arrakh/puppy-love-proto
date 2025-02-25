@@ -29,7 +29,7 @@ namespace DefaultNamespace
 
         private HashSet<string> unlockedActivities = new()
         {
-            "memory",
+            "memorize",
             "appreciate",
             "writing",
             "exercise"

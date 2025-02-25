@@ -964,7 +964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: 10
   mood: 10
-  stressLevel: 2
+  stressLevel: 0
   weeks:
   - {fileID: 11400000, guid: 33af7cd53119d7841ace6f1aa94c6edd, type: 2}
   quizController: {fileID: 1236522560}
@@ -4940,10 +4940,7 @@ MonoBehaviour:
   - {r: 0.3537736, g: 0.58042765, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 0.36467224, g: 0.23113209, b: 1, a: 1}
-  - {r: 0.27233893, g: 0.49014688, b: 0.6792453, a: 1}
-  - {r: 0.11369702, g: 0.6886792, b: 0.28435647, a: 1}
   - {r: 0.6886792, g: 0.61078584, b: 0.31510323, a: 1}
-  - {r: 0.49969703, g: 0.39021894, b: 0.745283, a: 1}
   stressDistractions:
   - I'm a failure
   - There is no way i can do this

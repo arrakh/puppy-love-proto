@@ -15,10 +15,10 @@ MonoBehaviour:
   displayName: Chemistry
   entries: {fileID: 11400000, guid: 69b58488ead34754585fa6807e7511b7, type: 2}
   parameters:
-    baseTimer: 14
+    baseTimer: 60
     quizCount: 5
     passingGrade: 3
-    otherAnswersCount: 2
+    otherAnswersCount: 1
     fakeAnswersCount: 1
     drainPerFocus: 1
     classLogicToMoodRatio: 1
