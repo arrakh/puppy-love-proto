@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2a5ebf6dfc816df4389350a405f06398
+guid: 8a76a617701000346b607fad12930982
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2719812859193910001
-    second: MoodDecrease1_0
+      213: 6149350130083122612
+    second: Group 86 (2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MoodDecrease1_0
+      name: Group 86 (2)_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 0
-        width: 83
-        height: 69
+        x: 2
+        y: 32
+        width: 79
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0d15306d98414ad0800000000000000
-      internalID: -2719812859193910001
+      spriteID: 4bd4b17dc51e65550800000000000000
+      internalID: 6149350130083122612
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MoodDecrease1_0: -2719812859193910001
+      Group 86 (2)_0: 6149350130083122612
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
