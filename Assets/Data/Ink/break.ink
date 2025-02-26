@@ -4,7 +4,6 @@
     - The bell rings, {lastClass} class has ended. #bg class #box event
     - Students rose from their seats as the {lastClass} class rings its bell. #bg class #box event
 }
-
 {love == 0:
     -> normalDialogue
 - else:
@@ -29,7 +28,7 @@ What would you like to do before the next class?
 You memorized some materials in the meantime...
 ~ temp roll = RANDOM(10, 30) / 10.0
 You got {roll} Logic!
-//~ AddLogic(roll)
+~ addLogic(roll)
 -> DONE
 
 === study_mood ===
@@ -39,7 +38,7 @@ You got {roll} Logic!
 }
 ~ temp roll = RANDOM(5, 20) / 10.0
 You got {roll} Mood!
-//~ AddMood(roll)
+~ addMood(roll)
 -> DONE
 
 === highLoveDialogue ===
@@ -59,11 +58,6 @@ You got {roll} Mood!
 {love == 5:
     -> Randomsentence
 }
-
-
-
-
-
 -> DONE
 
 === MovieTopic ===
