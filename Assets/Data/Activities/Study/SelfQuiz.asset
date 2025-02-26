@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Self Quiz
   activityId: self_quiz
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 2
+  moodGain: 0
+  stressGain: 0

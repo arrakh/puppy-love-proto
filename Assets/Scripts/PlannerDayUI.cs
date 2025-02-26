@@ -9,13 +9,16 @@ namespace DefaultNamespace
     public class PlannerDayUI : MonoBehaviour
     {
         public GameController gameController;
-
+        public RectTransform rect;
         public ActivitySlot[] activitySlots;
+        public ClassSlot[] classSlots;
         public Button confirmButton;
+        public Button clearButton;
         public TextMeshProUGUI dayText;
+        public float[] dailyXPositions;
 
         private ActivitySlot selectedSlot;
-        private List<ActivityButton> activityButtons;
+        public event Action onActivitiesEvaluated;
 
         private void OnConfirm()
         {
@@ -24,6 +27,7 @@ namespace DefaultNamespace
         private void Awake()
         {
             confirmButton.onClick.AddListener(OnConfirm);
+            clearButton.onClick.AddListener(OnClear);
 
             for (var i = 0; i < activitySlots.Length; i++)
             {
@@ -31,20 +35,35 @@ namespace DefaultNamespace
                 slot.slotIndex = i;
                 slot.button.onClick.AddListener(() => OnSlotClicked(slot));
             }
-
-            foreach (var button in activityButtons)
-                button.button.onClick.AddListener(() => OnActivityClicked(button));
         }
 
-        public void Display(DayData dayData, HashSet<string> unlockedActivities)
+        private void OnClear()
         {
-            dayText.text = dayData.dayName;
-            
-            foreach (var btn in activityButtons)
-                btn.gameObject.SetActive(unlockedActivities.Contains(btn.Id));
+            if (selectedSlot != null) selectedSlot.Display(null);
+            selectedSlot = null;
 
             foreach (var slot in activitySlots)
                 slot.DisplayEmpty();
+            
+            EvaluateActivities();
+        }
+
+        public void Display(int dayIndex, DayData dayData)
+        {
+            var pos = rect.anchoredPosition;
+            pos.x = dailyXPositions[dayIndex];
+            rect.anchoredPosition = pos;
+            
+            dayText.text = dayData.dayName;
+
+            foreach (var slot in activitySlots)
+                slot.DisplayEmpty();
+
+            for (var i = 0; i < classSlots.Length; i++)
+            {
+                var slot = classSlots[i];
+                slot.Display(dayData.classes[i]);
+            }
         }
         
         private void OnSlotClicked(ActivitySlot clicked)
@@ -52,7 +71,7 @@ namespace DefaultNamespace
             selectedSlot = clicked;
         }
 
-        private void OnActivityClicked(ActivityButton clicked)
+        public void OnActivityClicked(ActivityButton clicked)
         {
             if (selectedSlot != null)
             {
@@ -94,9 +113,8 @@ namespace DefaultNamespace
                 if (slot.activityData == null) continue;
                 activities.Add(slot.activityData.activityId);
             }
-
-            foreach (var btn in activityButtons)
-                if (activities.Contains(btn.Id)) btn.gameObject.SetActive(false);
+            
+            onActivitiesEvaluated?.Invoke();
         }
 
         private void EvaluateConfirm()

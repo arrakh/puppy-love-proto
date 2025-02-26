@@ -6,9 +6,10 @@ namespace DefaultNamespace
     public class ActivityData : EventData
     {
         public string activityId;
-        public string logicBonusDisplay;
-        public string moodBonusDisplay;
-        
+        public int logicGain;
+        public int moodGain;
+        public int stressGain;
+
 #if UNITY_EDITOR
         protected override void OnEventValidate()
         {
