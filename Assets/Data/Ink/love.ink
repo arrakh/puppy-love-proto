@@ -1,16 +1,13 @@
-//-> first_moment
+
 === first_moment ===
-#bg black
-#box event
-Feeling down after failing a class, you walk toward the shelter in the library, expecting to find solace in your usual poetry book. But instead, you see SHU leaning against the shelf, flipping through the pages of Stray Birds.
+Feeling down after failing a class, you walk toward the shelter in the library, expecting to find solace in your usual poetry book. But instead, you see SHU leaning against the shelf, flipping through the pages of Stray Birds. #bg black #box event
 + Look for another copy of Stray Birds -> PRETEND
 + Talk to Shu -> DIRECT
-
-
 
 -> END
 
 === PRETEND ===
+"Ahhh...S.T..."#box left
 "You’re not very good at pretending, you know."#box right
 "I… wasn’t pretending."#box left
 "Really? So you just happened to need a book from this exact shelf?"#box right
