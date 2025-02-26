@@ -121,7 +121,7 @@ namespace DefaultNamespace
                     if (!hadFirstMeeting) yield return DoFirstMoment();
                     else yield return DoFail(); 
                 }
-                else if (i != plannerUi.classSlots.Length) yield return DoBreak();
+                else if (i < day.classes.Length - 1) yield return DoBreak();
 
                 yield return transitionUi.WaitTransitionIn("", 0.6f);
                 
@@ -174,12 +174,12 @@ namespace DefaultNamespace
 
         private IEnumerator DoDinner()
         {
-            yield return transitionUi.WaitTransitionIn("", 0.6f, 2.4f);
+            yield return transitionUi.WaitTransitionIn("Later that night...", 0.6f, 2.4f);
             SetState(State.DIALOGUE);
-            yield return storyController.StartStory("dinner_week");
+
             yield return transitionUi.WaitTransitionOut(1f);
 
-            yield break;
+            yield return storyController.StartStory("dinner_week");
         }
 
         private IEnumerator DoClass(SchoolClassData data)

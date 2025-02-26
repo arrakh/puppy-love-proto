@@ -25,9 +25,9 @@ EXTERNAL UnlockActivity(id)
 === function addStressLevel(delta)
 ~ AddStressLevel(delta)
 { delta > 0:
-    You feel less stressed! #box event
-- else:
     You feel more stressed... #box event
+- else:
+    You feel less stressed! #box event
 }
 ~ return
 
