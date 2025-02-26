@@ -1,3 +1,4 @@
+//->break
 === break === //main stitch
 { shuffle:
     - The bell rings, {lastClass} class has ended. #bg class #box event
@@ -14,13 +15,13 @@
 === normalDialogue ===
 What would you like to do before the next class? 
 + Memorize Materials -> study_logic
-+ Increase Mood -> study_mood
++ Take a short break -> study_mood
 -> END
 
 === puppyDialogue ===
 What would you like to do before the next class? 
 + Memorize Materials -> study_logic
-+ Increase Mood -> study_mood
++ Take a short break -> study_mood
 + Talk with Shu  -> highLoveDialogue
 -> END
 
@@ -28,7 +29,7 @@ What would you like to do before the next class?
 You memorized some materials in the meantime...
 ~ temp roll = RANDOM(10, 30) / 10.0
 You got {roll} Logic!
-~ AddLogic(roll)
+//~ AddLogic(roll)
 -> DONE
 
 === study_mood ===
@@ -38,7 +39,7 @@ You got {roll} Logic!
 }
 ~ temp roll = RANDOM(5, 20) / 10.0
 You got {roll} Mood!
-~ AddMood(roll)
+//~ AddMood(roll)
 -> DONE
 
 -> END
@@ -46,12 +47,7 @@ You got {roll} Mood!
 === highLoveDialogue ===
 ~ temp rnd = RANDOM(1, 3)
 {rnd == 1:
-    "Shu comes to my seat and knocks on the desk. He smiles and takes out a movie CD, asking 'Do you like horror movies?'"
-    + "Yes, I love horror movies."
-        ~ horrorlove = true
-        -> horrorMovieResponse
-    + "No, romantic movies are my favorite."
-        -> romanticMovieResponse
+   -> MovieTopic
         
 rnd == 2:
     -> hallwayScene
@@ -63,7 +59,14 @@ rnd == 3:
 }
 -> END
 
-
+=== MovieTopic ===
+ "Shu comes to my seat and knocks on the desk. He smiles and takes out a movie CD, asking 'Do you like horror movies?'"
+    + "Yes, I love horror movies."
+        ~ horrorlove = true
+        -> horrorMovieResponse
+    + "No, romantic movies are my favorite."
+        -> romanticMovieResponse
+        
 === horrorMovieResponse ===
 "Great! We should watch one together sometime."
 -> END

@@ -1,45 +1,43 @@
+
 === first_moment ===
-#bg black
-#box event
-Feeling down after failing a class, you walk into the library looking for a quiet place to clear your mind. 
-As you wander through the shelves, you spot a familiar figure sitting by the window, bathed in soft golden light. 
-Engrossed in a thick book, their eyes scanning the pages with unwavering focus. 
-In that moment, they seems distant, almost untouchable.
+Feeling down after failing a class, you walk toward the shelter in the library, expecting to find solace in your usual poetry book. But instead, you see SHU leaning against the shelf, flipping through the pages of Stray Birds. #bg black #box event
++ Look for another copy of Stray Birds -> PRETEND
++ Talk to Shu -> DIRECT
 
-Although hesitant, Your heart tugs unconciously, approaching the figure. 
-Gently tapping on the table, you watch as they lifts their gaze, surprise flickering in their eyes before softening into something more familiar.
+-> END
 
-* You always look so focused when you’re reading.\\n It’s kinda impressive. #box left
-* I just needed a break, but looks like \\nI walked into serious study mode here. #box left
-* I had the worst exam ever. Distract me \\nwith something interesting, please. #box left
+=== PRETEND ===
+"Ahhh...S.T..."#box left
+"You’re not very good at pretending, you know."#box right
+"I… wasn’t pretending."#box left
+"Really? So you just happened to need a book from this exact shelf?"#box right
+"...Maybe."#box left
+"You like poetry too?"#box right
+"Yeah… I come here to read it whenever I’m feeling down."#box left
+ "Then you should have it. I can always read it another time. Poetry always has magic."#box right
+"Thanks. But... Didn’t think someone like you would be into Stray Birds."#box left
+"What’s that supposed to mean? Because I’m always on the basketball court?"#box right
+"Something like that."#box left
+"Guess I’m full of surprises."#box right
 
-//(Seeing His Passion Makes Your Heart Flutter)
-#box event
-- Shu chuckles, closing the book slightly and pointing at the cover. 
-#box right
-It’s about animal anatomy. 
-I want to be a veterinarian someday, so I need to learn all this.
-
-* That’s amazing. You really love \\nwhat you do, don’t you? #box left
-* I wish I had a dream that clear. \\nYou make it sound like something worth chasing. #box left
-* So basically, you’ll be the hero \\nanimals need? That’s kinda cool. #box left
-
--
-#box event
-Shu lets out a small laugh, absentmindedly tapping their fingers against the page as if thinking about your words.
-
-#box right
-It’s not easy, though. There’s so much to learn, and sometimes I wonder if I’ll ever be good enough.
-
-
-* \(Shu’s really… amazing. I never noticed how passionate \\nthey get when talking about what they love.)
-* \(Even when Shu’s unsure, they still keep moving forward.\\n I wish I could be like that…)
-* \(They shine in a way I never expected.\\n Maybe that’s why, right now, I can’t look away.)
-
-- You walk out of the library with a strange but warm feeling #box event
+Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
 ~ temp roll = RANDOM(5, 10) / 10.0
 ~love = roll
+-> DONE
 
+=== DIRECT ===
+"I didn’t expect you to read poetry."#box left
+"Why not?"#box right
+"I just thought… someone sporty like you wouldn’t be into it."#box left
+"I guess even athletes need a little poetry sometimes. What about you? You seem… a little down."#box right
+"Failed my exam today. Whenever I feel bad, I read this book. It always makes me feel a little lighter."#box left
+"Then you should have it. I can always read it another time."#box right
+"Are you sure?"#box left
+"Yeah. But only if you tell me your favorite poem from it next time."#box right
+Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
--> END
+~ temp roll = RANDOM(5, 10) / 10.0
+~love = roll
+-> DONE
+
