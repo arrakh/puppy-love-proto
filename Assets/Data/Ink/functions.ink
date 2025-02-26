@@ -5,17 +5,30 @@ EXTERNAL UnlockActivity(id)
 
 === function addMood(delta)
 ~ AddMood(delta)
-You feel better! (+{delta} Mood) #box event
+{ delta > 0:
+    You feel better! (+{delta} Feel) #box event
+- else:
+    You feel worse... ({delta} Feel) #box event
+}
+
 ~ return
 
 === function addLogic(delta)
 ~ AddLogic(delta)
-You feel smarter! (+{delta} Logic) #box event
+{ delta > 0:
+    You feel smarter! (+{delta} Logic) #box event
+- else:
+    You feel dumber... ({delta} Logic) #box event
+}
 ~ return
 
 === function addStressLevel(delta)
 ~ AddStressLevel(delta)
-You feel more stressed... (+{delta} Stress Level) #box event
+{ delta > 0:
+    You feel less stressed! #box event
+- else:
+    You feel more stressed... #box event
+}
 ~ return
 
 === function unlockActivity(id)

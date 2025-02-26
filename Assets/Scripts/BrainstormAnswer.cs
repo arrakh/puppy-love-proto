@@ -19,7 +19,6 @@ namespace DefaultNamespace
         public Button focusButton;
         public AnswerButton prefab;
         public RectTransform holder;
-        public TextMeshProUGUI logicText, moodText;
 
         private List<AnswerButton> spawnedAnswers = new();
         private List<AnswerButton> spawnedDistractions = new();
@@ -38,21 +37,12 @@ namespace DefaultNamespace
 
             if (gameController.logic < logicCost || gameController.mood < moodCost) return;
 
-            gameController.logic -= logicCost;
-            gameController.mood -= moodCost;
+            if (Mathf.Abs(logicCost) > 0f) gameController.AddLogic(-logicCost);
+            if (Mathf.Abs(moodCost) > 0f) gameController.AddMood(-moodCost);
 
             ClearDistractions();
             
             focusButton.interactable = !(gameController.logic < logicCost || gameController.mood < moodCost);
-        }
-
-        private void Update()
-        {
-            var logicCost = drainPerFocus * classLogicToMoodRatio;
-            var moodCost = drainPerFocus * (1 - classLogicToMoodRatio);
-            
-            logicText.text = "-" + logicCost.ToString("F1");
-            moodText.text = "-" + moodCost.ToString("F1");
         }
 
         private void OnBrainstorm()
