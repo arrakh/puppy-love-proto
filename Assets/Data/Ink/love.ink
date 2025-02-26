@@ -23,8 +23,8 @@ Feeling down after failing a class, you walk toward the shelter in the library, 
 
 Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
-~ temp roll = RANDOM(5, 10) / 10.0
-~love = roll
+~love = 1
+ ~unlockActivity("textmessage")
 -> DONE
 
 === DIRECT ===
@@ -39,7 +39,7 @@ Shu handed you the book before leaving the library. Watching his figure disappea
 "Yeah. But only if you tell me your favorite poem from it next time."#box right
 Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
-~ temp roll = RANDOM(5, 10) / 10.0
-~love = roll
+~love = 1
+ ~unlockActivity("textmessage")
 -> DONE
 

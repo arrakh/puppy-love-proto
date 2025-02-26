@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Writing
   activityId: writing
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 1
+  moodGain: 1
+  stressGain: 0

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Practice
   activityId: practice
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 2
+  moodGain: 0
+  stressGain: 0

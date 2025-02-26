@@ -16,6 +16,7 @@ How was your week? Anything worth mentioning? #box right #bg dinner
 * Why do we have to talk about grades every time we eat? #box left
 
 - You finish your food in silence... #box event
+~ addStressLevel(1)
 ->END
 
 === dinner_straight_a ===
@@ -37,5 +38,6 @@ How was your week? Anything worth mentioning? #box right #bg dinner
 - Other students can manage good grades, so why can’t you? You need to work harder!
 - You’re not a child anymore. It’s time to take responsibility for your own future.
 }
+~ addStressLevel(1)
 
 -> END
