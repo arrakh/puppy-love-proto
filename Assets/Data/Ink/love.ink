@@ -7,6 +7,7 @@ Feeling down after failing a class, you walk toward the shelter in the library, 
 -> END
 
 === PRETEND ===
+...
 "Ahhh...S.T..."#box left
 "You’re not very good at pretending, you know."#box right
 "I… wasn’t pretending."#box left
@@ -27,6 +28,7 @@ Shu handed you the book before leaving the library. Watching his figure disappea
 -> DONE
 
 === DIRECT ===
+...
 "I didn’t expect you to read poetry."#box left
 "Why not?"#box right
 "I just thought… someone sporty like you wouldn’t be into it."#box left

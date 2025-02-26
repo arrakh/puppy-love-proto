@@ -23,6 +23,7 @@ namespace DefaultNamespace
         public DialogueUI dialogueUi;
 
         public bool hadFirstMeeting = false;
+        public bool isMorning = true;
         public SchoolClassData lastClass;
         
         public TaskCompletionSource<int> scheduleCompleteTsc = new();
@@ -55,11 +56,21 @@ namespace DefaultNamespace
 
         private IEnumerator WeekLoop(WeekData week)
         {
-            foreach (var day in week.days) yield return DayLoop(day);
+            plannerUi.Display(week);
+            int dayIndex = 0;
+            
+            foreach (var day in week.days)
+            {
+                dayIndex++;
+                yield return DayLoop(dayIndex, day);
+            }
         }
 
-        private IEnumerator DayLoop(DayData day)
+        private IEnumerator DayLoop(int dayIndex, DayData day)
         {
+            isMorning = true;
+            variablesController.SyncVariables();
+            
             yield return transitionUi.WaitTransitionIn(day.dayName, 0.6f, 1.4f);
             transitionUi.TransitionOut(2f);
                 
@@ -69,18 +80,18 @@ namespace DefaultNamespace
                 
             SetState(State.PLANNING);
 
-            plannerUi.Display(day, unlockedActivities);
+            plannerUi.plannerDayUi.Display(day, unlockedActivities);
             plannerUi.SetIsPlanningMode(true);
-            plannerUi.DisplayProgress(0);
+            plannerUi.DisplayProgress(dayIndex, 0);
 
             yield return new WaitUntil(() => scheduleCompleteTsc.Task.IsCompleted);
 
             plannerUi.SetIsPlanningMode(false);
 
             //FIRST ACTIVITY
-            yield return DoActivity(plannerUi.activitySlots[0].activityData);
+            yield return DoActivity(plannerUi.GetActivity(0));
             int strikeCount = 1;
-            plannerUi.DisplayProgress(strikeCount);
+            plannerUi.DisplayProgress(dayIndex, strikeCount);
             strikeCount++;
 
             //CLASSES
@@ -99,16 +110,19 @@ namespace DefaultNamespace
                 
                 SetState(State.PLANNING);
                 yield return transitionUi.WaitTransitionOut(1f);
-                plannerUi.DisplayProgress(strikeCount);
+                plannerUi.DisplayProgress(dayIndex, strikeCount);
                 strikeCount++;
             }
+            
+            isMorning = false;
+            variablesController.SyncVariables();
 
             //SECOND AND THIRD ACTIVITY
             for (int i = 1; i < 3; i++)
             {
                 Debug.Log($"DOING ACTIVITY {i + 1}");
-                yield return DoActivity(plannerUi.activitySlots[i].activityData);
-                plannerUi.DisplayProgress(strikeCount);
+                yield return DoActivity(plannerUi.GetActivity(i));
+                plannerUi.DisplayProgress(dayIndex, strikeCount);
                 strikeCount++;
             }
 
@@ -132,13 +146,11 @@ namespace DefaultNamespace
         {
             SetState(State.DIALOGUE);
             yield return storyController.StartStory("first_moment");
-            Debug.Log("FIRST MOMENT DONE");
             hadFirstMeeting = true;
         }
 
         private IEnumerator DoDinner()
         {
-            Debug.Log("DOING DINNER...");
             yield return transitionUi.WaitTransitionIn("", 0.6f, 2.4f);
             SetState(State.DIALOGUE);
             yield return storyController.StartStory("dinner_week");
