@@ -52,7 +52,7 @@ namespace DefaultNamespace
 
             var button = Instantiate(prefab, holder);
 
-            button.Set(holder, answer.color, answer.text, a => quizController.Answer(a)); 
+            button.Set(holder, answer.color, Color.white, answer.text, a => quizController.Answer(button, a)); 
                 
             spawnedAnswers.Add(button);
 
@@ -65,7 +65,7 @@ namespace DefaultNamespace
             {
                 //TODO: TO PERSONALIZE DISTRACTION, SPAWN FROM SOMEWHERE ELSE, NOT ANSWER BUTTON
                 var distractionBtn = Instantiate(prefab, holder);
-                distractionBtn.Set(holder, new Color(1f, 0.43f, 0.47f), distraction, null);
+                distractionBtn.Set(holder, new Color(1f, 0.43f, 0.47f), Color.black, distraction, null);
                 
                 spawnedDistractions.Add(distractionBtn);
             }

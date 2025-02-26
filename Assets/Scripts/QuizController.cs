@@ -29,12 +29,16 @@ public class QuizController : MonoBehaviour
     public Timer timer;
     public Color[] colors;
     public string[] stressDistractions;
+    public RectTransform runnerRect;
+    public RectTransform progressRect;
+    public Image progressFill;
+    public QuizFeedbackObject feedbackObject;
 
     private Queue<Quiz> quizQueue = new();
     private Quiz currentQuiz;
     private List<QuizGameAnswer> answerPool = new();
-    private List<Color> answerColorPool = new();
 
+    private AnswerButton lastAnswerButton = null;
     private TaskCompletionSource<string> quizAnswerTsc = new();
     private int correctCount, wrongCount;
 
@@ -54,6 +58,7 @@ public class QuizController : MonoBehaviour
         wrongCount = 0;
         
         finalScreen.gameObject.SetActive(false);
+        feedbackObject.gameObject.SetActive(false);
 
         InitializeQuiz(currentEntry);
 
@@ -64,6 +69,7 @@ public class QuizController : MonoBehaviour
             quizAnswerTsc = new();
             currentQuiz = quizQueue.Dequeue();
             questionText.text = currentQuiz.question;
+            UpdateRunner();
 
             GenerateAnswerPool();
 
@@ -78,8 +84,14 @@ public class QuizController : MonoBehaviour
             {
                 var answer = quizAnswerTsc.Task.Result;
                 var isCorrect = answer.Equals(currentQuiz.answer, StringComparison.InvariantCultureIgnoreCase);
+                
+                feedbackObject.gameObject.SetActive(true);
+                feedbackObject.Display(isCorrect, lastAnswerButton);
+                
                 if (isCorrect) correctCount++;
                 else wrongCount++;
+
+                UpdateRunner();
             }
 
             UpdateStatus();
@@ -92,6 +104,20 @@ public class QuizController : MonoBehaviour
         resultText.text = $"{correctCount} / {quizCount} correct, " + (HasPassed ? "<color=green>You Passed!" : "<color=red>You Failed!");
 
         yield return new WaitForSeconds(3f);
+    }
+
+    private void UpdateRunner()
+    {
+        var progress = wrongCount + correctCount;
+        var alpha = (float) progress / quizCount;
+
+        progressFill.fillAmount = alpha;
+
+        var pixelProgress = progressRect.rect.width * alpha;
+
+        var pos = runnerRect.anchoredPosition;
+        pos.x = pixelProgress;
+        runnerRect.anchoredPosition = pos;
     }
 
     private void GenerateAnswerPool()
@@ -152,7 +178,11 @@ public class QuizController : MonoBehaviour
 
     private bool HasProgressedQuiz() => timer.IsCompleted() || quizAnswerTsc.Task.IsCompleted;
 
-    public void Answer(string answer) => quizAnswerTsc?.SetResult(answer);
+    public void Answer(AnswerButton button, string answer)
+    {
+        lastAnswerButton = button;
+        quizAnswerTsc?.SetResult(answer);
+    }
 
     public List<QuizGameAnswer> GetAnswerPool() => answerPool;
 

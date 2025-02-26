@@ -516,7 +516,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1788682517189532418, guid: 01766df3bbd94734190473ff1f746289, type: 3}
+  m_Sprite: {fileID: 5225404631398646237, guid: 10b917d68cc62584985db77f60629964, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -972,6 +972,7 @@ MonoBehaviour:
   activitiesArea: {fileID: 1190114336950030220}
   plannerDayUi: {fileID: 8275421320643639394}
   columnCount: 6
+  activitiesPerDay: 3
   activityButtonPrefab: {fileID: 4584861596986158081, guid: c5525ce20b133364cab61819e48443e8, type: 3}
   textToStrike:
   - {fileID: 4045450795412410986}

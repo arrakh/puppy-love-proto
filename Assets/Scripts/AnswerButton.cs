@@ -14,6 +14,7 @@ namespace DefaultNamespace
         public float targetSpeedVariance = 100f;
         public float deceleration = 6000f;
         public float decelerationVariance = 400f;
+        public bool isStatic = false;
         
         public float smoothTime = 0.1f;
         
@@ -29,11 +30,15 @@ namespace DefaultNamespace
         private Vector2 direction;
         private RectTransform boundariesRect;
 
-        public void Set(RectTransform boundaries, Color color, string answer, Action<string> onAnswerButton)
+        public void CopyVisual(AnswerButton btn)
+            => Set(btn.boundariesRect, btn.background.color, btn.answerText.color, btn.answerText.text, null);
+
+        public void Set(RectTransform boundaries, Color color, Color textColor, string answer, Action<string> onAnswerButton)
         {
             boundariesRect = boundaries;
             hasInit = false;
             background.color = color;
+            answerText.color = textColor;
             answerText.text = answer;
 
             direction = Random.insideUnitCircle.normalized;
@@ -51,6 +56,8 @@ namespace DefaultNamespace
         {
             rect.sizeDelta = new Vector2(textRect.rect.width, textRect.rect.height);
 
+            if (isStatic) return;
+            
             if (Mathf.Abs(currentSpeed - targetSpeed) > 0.01f)
             {
                 currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref currentVelocity, smoothTime);

@@ -6,7 +6,6 @@ namespace DefaultNamespace
 {
     public class Timer : MonoBehaviour
     {
-        [SerializeField] private Slider slider;
         [SerializeField] private Gradient gradient;
         [SerializeField] private Image sliderFill;
 
@@ -22,7 +21,7 @@ namespace DefaultNamespace
             currentTimer -= Time.deltaTime;
             
             var alpha = Mathf.Clamp01(currentTimer / timer);
-            slider.value = alpha;
+            sliderFill.fillAmount = alpha;
             sliderFill.color = gradient.Evaluate(alpha);
         }
 

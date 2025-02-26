@@ -14,6 +14,7 @@ namespace DefaultNamespace
         public RectTransform activitiesArea;
         public PlannerDayUI plannerDayUi;
         public int columnCount = 6;
+        public int activitiesPerDay = 3;
         public ActivityButton activityButtonPrefab;
 
         public TextMeshProUGUI[] textToStrike;
@@ -92,7 +93,7 @@ namespace DefaultNamespace
         {
             var activity = plannerDayUi.activitySlots.Select(x => x.activityData).ToArray();
 
-            var startIndex = dayIndex * columnCount;
+            var startIndex = dayIndex * activitiesPerDay;
 
             for (int i = 0; i < activity.Length; i++)
             {

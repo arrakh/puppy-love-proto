@@ -4567,6 +4567,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 249670743126536902, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 249670743126536902, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099896872500734681, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099896872500734681, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2158440063832695088, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4647,6 +4663,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2314601391292070377, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314601391292070377, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622594821574423438, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622594821574423438, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231497793102158740, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231497793102158740, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5385295989102167089, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5385295989102167089, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799116000895153227, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799116000895153227, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7301371195722584309, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
       propertyPath: gameController
       value: 
@@ -4654,6 +4710,30 @@ PrefabInstance:
     - target: {fileID: 8098397050220746863, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
       propertyPath: m_Name
       value: QuizUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8098397050220746863, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207560500653162330, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: chargeTime
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207560500653162330, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: overthinkingGradient.ctime0
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207560500653162330, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: overthinkingGradient.key1.b
+      value: 0.25943398
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207560500653162330, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: overthinkingGradient.key1.g
+      value: 0.25943398
+      objectReference: {fileID: 0}
+    - target: {fileID: 8207560500653162330, guid: b7a2a886fb9822543a0b6ed98f666249, type: 3}
+      propertyPath: overthinkingGradient.key1.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
