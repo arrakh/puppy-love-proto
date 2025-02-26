@@ -15,3 +15,19 @@ Writing stories...
 === activity_exercise ===
 Stretching limbs...
 -> END
+
+=== activity_watchmovie ===
+
+-> END
+
+=== activity_playvediogame ===
+-> END
+
+=== activity_textmessage ===
+-> END
+
+=== activity_vediocall ===
+-> END
+
+=== activity_studytogether ===
+-> END

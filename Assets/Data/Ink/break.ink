@@ -4,7 +4,7 @@
     - The bell rings, {lastClass} class has ended. #bg class #box event
     - Students rose from their seats as the {lastClass} class rings its bell. #bg class #box event
 }
-    ~love = 2
+ ~love = 5  
 {love == 0:
     -> normalDialogue
 - else:
@@ -56,6 +56,9 @@ You got {roll} Mood!
 {love == 4:
     -> MovieTopic
 }
+{love == 5:
+    -> Randomsentence
+}
 
 
 
@@ -73,10 +76,14 @@ You got {roll} Mood!
         
 === horrorMovieResponse ===
 "Great! We should watch one together sometime."
+~love =5
+~unlockActivity("watchmovie")
 -> DONE
 
 === romanticMovieResponse ===
 "Oh, I see! Maybe we can watch a romantic movie together?"
+~love =5
+~unlockActivity("watchmovie")
 -> DONE
 
 === PoetryTopic===
@@ -88,31 +95,48 @@ You got {roll} Mood!
 "Yeah. Like even sadness can be something gentle." #box left 
 "Do you think clouds ever get tired?"  #box right
 "Maybe. But they always find their way back to the sky."  #box left
+ ~love = 2
+ //test{love} love point
+ ~unlockActivity("vediocall")
 ->DONE
 
 === FoodTopic ===
 (Watching Shu eat.)  
-"You're like a squirrel, you know that?"  
-"Huh?"  
-"The way you nibble. And how you keep small bites in your cheeks before swallowing."  
-"I do not!"  
-"You totally do."  
-"...Is it cute at least?"  
-"The cutest." 
+"You're like a squirrel, you know that?"  #box left
+"Huh?"  #box right
+"The way you nibble. And how you keep small bites in your cheeks before swallowing."  #box left
+"I do not!"  #box right
+"You totally do."  #box left
+"...Is it cute at least?"  #box right
+"The cutest." #box left
+ ~love = 3
+  ~unlockActivity("studytogether")
 ->DONE
 
 === Basketball ===
 (Watching Shu play basketball.)  
-"Whoa, that was a nice shot!"  
-Shu grins. "Of course."  
-"Do it again."  
-"Why?"  
-"Because I wasn't recording."  
-"Are you my coach or my fan?"  
-"Both, obviously."  
-Shu laughs, takes another shot—swish.  
-"Damn. I should start charging tickets." 
+"Whoa, that was a nice shot!"  #box left
+"Of course."  #box right
+"Do it again."  #box left
+"Why?"  #box right
+"Because I wasn't recording."  #box left
+"Are you my coach or my fan?"  #box right
+"Both, obviously."  #box left
+"Damn. I should start charging tickets." #box right
+ ~love = 4
+(Shu laughs, takes another shot—swish. )#box event
+ ~unlockActivity("playvediogame")
 ->DONE
+
+=== Randomsentence ===
+{ shuffle:
+- You and Shu talk about the exam you just had, comparing answers and sighing at the tricky questions.
+- Shu stretches lazily, tapping their pen against the desk. 'Finally, a break…'
+- You and Shu share a snack, debating whether the vending machine chips taste different today.
+- Outside, the sun is warm. You and Shu sit on the steps, watching classmates pass by.
+- Shu scrolls through their phone, occasionally showing you funny memes.
+}
+-> DONE
 
 === hallwayScene ===
 "You pass by a group of classmates playing with paper airplanes in the hallway. He’s among them."
