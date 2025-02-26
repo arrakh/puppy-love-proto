@@ -17,7 +17,7 @@ public class QuizController : MonoBehaviour
     public int passingGrade = 2;
     public int otherAnswersCount = 4;
     public int fakeAnswersCount = 3;
-
+    
     public BrainstormAnswer brainstormAnswer;
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI statusText;
@@ -90,7 +90,7 @@ public class QuizController : MonoBehaviour
         brainstormAnswer.ClearAll();
         finalScreen.gameObject.SetActive(true);
         resultText.text = $"{correctCount} / {quizCount} correct, " + (HasPassed ? "<color=green>You Passed!" : "<color=red>You Failed!");
-        
+
         yield return new WaitForSeconds(3f);
     }
 

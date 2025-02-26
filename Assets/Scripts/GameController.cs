@@ -21,6 +21,7 @@ namespace DefaultNamespace
         public InkStoryController storyController;
         public StoryVariablesController variablesController;
         public DialogueUI dialogueUi;
+        public ResourceUI resourceUI;
 
         public bool hadFirstMeeting = false;
         public bool isMorning = true;
@@ -28,6 +29,10 @@ namespace DefaultNamespace
         public ActivityDatabase activityDatabase;
         
         public TaskCompletionSource<int> scheduleCompleteTsc = new();
+
+        public event Action<float> onLogicUpdated; 
+        public event Action<float> onMoodUpdated; 
+        public event Action<int, int> onStressUpdated; 
 
         private HashSet<string> unlockedActivities = new()
         {
@@ -48,6 +53,10 @@ namespace DefaultNamespace
         
         private IEnumerator Start()
         {
+            onMoodUpdated?.Invoke(mood);
+            onLogicUpdated?.Invoke(mood);
+            onStressUpdated?.Invoke(0, stressLevel);
+            
             activityDatabase.Initialize();
             storyController.InitializeStory(story.text);
 
@@ -107,8 +116,11 @@ namespace DefaultNamespace
                 yield return DoClass(classData);
                 variablesController.SyncVariables();
 
-                if (!hadFirstMeeting && !quizController.HasPassed)
-                    yield return DoFirstMoment();
+                if (!quizController.HasPassed)
+                {
+                    if (!hadFirstMeeting) yield return DoFirstMoment();
+                    else yield return DoFail(); 
+                }
                 else if (i != plannerUi.classSlots.Length) yield return DoBreak();
 
                 yield return transitionUi.WaitTransitionIn("", 0.6f);
@@ -134,6 +146,12 @@ namespace DefaultNamespace
             yield return DoDinner();
 
             scheduleCompleteTsc = new();
+        }
+
+        private IEnumerator DoFail()
+        {
+            SetState(State.DIALOGUE);
+            yield return storyController.StartStory("fail");
         }
 
         private IEnumerator DoBreak()
@@ -176,7 +194,9 @@ namespace DefaultNamespace
 
             yield return transitionUi.WaitTransitionOut(3f);
 
+            resourceUI.SetIsGame(true);
             yield return quizController.StartQuiz(data.parameters, data.entries);
+            resourceUI.SetIsGame(false);
         }
 
         private IEnumerator DoActivity(ActivityData data)
@@ -214,18 +234,22 @@ namespace DefaultNamespace
         public void AddMood(float delta)
         {
             mood = Mathf.Clamp(mood + delta, 0, float.MaxValue);
+            onMoodUpdated?.Invoke(mood);
             variablesController.SyncVariables();
         }
 
         public void AddLogic(float delta)
         {
             logic = Mathf.Clamp(logic + delta, 0, float.MaxValue);
+            onLogicUpdated?.Invoke(logic);
             variablesController.SyncVariables();
         }
 
         public void AddStressLevel(int delta)
         {
+            var stress = stressLevel;
             stressLevel = Mathf.Clamp(stressLevel + delta, 0, 4);
+            onStressUpdated?.Invoke(stress, stressLevel);
             variablesController.SyncVariables();
         }
 

@@ -38,3 +38,7 @@ Yawn... \<i>(Click anywhere to continue) #bg black #box left
 
 -> END
 
+=== fail ===
+The piece of paper stares at you, reminding you of your failure...
+~ addStressLevel(1)
+-> END

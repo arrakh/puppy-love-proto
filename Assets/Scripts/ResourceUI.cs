@@ -7,14 +7,26 @@ namespace DefaultNamespace
     public class ResourceUI : MonoBehaviour
     {
         public GameController gameController;
-        
-        //todo: should be separate Counter objects
-        public TextMeshProUGUI logicText, moodText;
 
-        private void Update()
+        public ResourceCounter logicCounter, moodCounter;
+        public StressBar stressBar;
+
+        private void Awake()
         {
-            logicText.text = gameController.logic.ToString("F1");
-            moodText.text = gameController.mood.ToString("F1");
+            gameController.onLogicUpdated += OnLogicUpdate;
+            gameController.onMoodUpdated += OnMoodUpdate;
+            gameController.onStressUpdated += OnStressUpdate;
         }
+
+        public void SetIsGame(bool isGame)
+        {
+            stressBar.gameObject.SetActive(!isGame);
+        }
+
+        private void OnStressUpdate(int oldValue, int newValue) => stressBar.Set(newValue);
+
+        private void OnMoodUpdate(float v) => moodCounter.SetCount(v);
+
+        private void OnLogicUpdate(float v) => logicCounter.SetCount(v);
     }
 }
