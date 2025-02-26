@@ -4,7 +4,7 @@
     - The bell rings, {lastClass} class has ended. #bg class #box event
     - Students rose from their seats as the {lastClass} class rings its bell. #bg class #box event
 }
- ~love = 5  
+
 {love == 0:
     -> normalDialogue
 - else:
