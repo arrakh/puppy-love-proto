@@ -28,7 +28,6 @@ Feeling down after failing a class, you walk toward the shelter in the library, 
 Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
 ~love = 1
- ~unlockActivity("textmessage")
 -> DONE
 
 === DIRECT ===
@@ -44,6 +43,5 @@ Shu handed you the book before leaving the library. Watching his figure disappea
 Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
 ~love = 1
- ~unlockActivity("textmessage")
 -> DONE
 

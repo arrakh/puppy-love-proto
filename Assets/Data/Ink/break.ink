@@ -91,6 +91,7 @@ You got {roll} Mood!
 "Maybe. But they always find their way back to the sky."  #box left
  ~love = 2
  //test{love} love point
+ ~unlockActivity("textmessage")
  ~unlockActivity("vediocall")
 ->DONE
 
