@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Memorize
   activityId: memorize
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 1
+  moodGain: 0
+  stressGain: 0

@@ -25,6 +25,7 @@ namespace DefaultNamespace
         public bool hadFirstMeeting = false;
         public bool isMorning = true;
         public SchoolClassData lastClass;
+        public ActivityDatabase activityDatabase;
         
         public TaskCompletionSource<int> scheduleCompleteTsc = new();
 
@@ -47,6 +48,7 @@ namespace DefaultNamespace
         
         private IEnumerator Start()
         {
+            activityDatabase.Initialize();
             storyController.InitializeStory(story.text);
 
             foreach (var week in weeks) yield return WeekLoop(week);
@@ -61,8 +63,8 @@ namespace DefaultNamespace
             
             foreach (var day in week.days)
             {
-                dayIndex++;
                 yield return DayLoop(dayIndex, day);
+                dayIndex++;
             }
         }
 
@@ -78,14 +80,17 @@ namespace DefaultNamespace
             yield return storyController.StartStory("morning");
             yield return new WaitForSeconds(0.6f);
                 
+            //PLANNING
             SetState(State.PLANNING);
 
-            plannerUi.plannerDayUi.Display(day, unlockedActivities);
+            plannerUi.EvaluateAndSpawnActivities(activityDatabase, unlockedActivities);
+            plannerUi.plannerDayUi.Display(dayIndex, day);
             plannerUi.SetIsPlanningMode(true);
             plannerUi.DisplayProgress(dayIndex, 0);
 
             yield return new WaitUntil(() => scheduleCompleteTsc.Task.IsCompleted);
 
+            plannerUi.ApplyTodayActivities(dayIndex);
             plannerUi.SetIsPlanningMode(false);
 
             //FIRST ACTIVITY
@@ -95,11 +100,11 @@ namespace DefaultNamespace
             strikeCount++;
 
             //CLASSES
-            for (var i = 0; i < plannerUi.classSlots.Length; i++)
+            for (var i = 0; i < day.classes.Length; i++)
             {
-                var classSlot = plannerUi.classSlots[i];
+                var classData = day.classes[i];
                 yield return new WaitForSeconds(0.8f);
-                yield return DoClass(classSlot.classData);
+                yield return DoClass(classData);
                 variablesController.SyncVariables();
 
                 if (!hadFirstMeeting && !quizController.HasPassed)
@@ -220,7 +225,7 @@ namespace DefaultNamespace
 
         public void AddStressLevel(int delta)
         {
-            stressLevel = Mathf.Clamp(stressLevel + delta, 0, int.MaxValue);
+            stressLevel = Mathf.Clamp(stressLevel + delta, 0, 4);
             variablesController.SyncVariables();
         }
 

@@ -162,4 +162,24 @@ public class QuizController : MonoBehaviour
         questionText.text = String.Empty;
         quizHolder.gameObject.SetActive(false);
     }
+
+    [ContextMenu("Win Quiz")]
+    public void WinQuiz()
+    {
+        quizAnswerTsc.SetResult(currentQuiz.answer);
+        timer.Set(0f);
+        quizQueue.Clear();
+        correctCount = quizCount;
+        wrongCount = 0;
+    }
+
+    [ContextMenu("Lose Quiz")]
+    public void LoseQuiz()
+    {
+        quizAnswerTsc.SetResult("");
+        timer.Set(0f);
+        quizQueue.Clear();
+        correctCount = 0;
+        wrongCount = quizCount;
+    }
 }

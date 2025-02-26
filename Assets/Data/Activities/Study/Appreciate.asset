@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Appreciate Art
   activityId: appreciate
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 0
+  moodGain: 1
+  stressGain: 0
