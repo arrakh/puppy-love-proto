@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8078422591899897452, guid: d57745ab8dcc1be44b012b401c0df075, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2941,6 +2941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 263527303}
   storyController: {fileID: 2125107768}
+  debugFakeFunc: 0
 --- !u!4 &619243843
 Transform:
   m_ObjectHideFlags: 0
