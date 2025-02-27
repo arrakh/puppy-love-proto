@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: LiteratureQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "Who wrote Romeo and Juliet?"
+    answer: "Shakespeare"
+  - question: "What is a story with talking animals?"
+    answer: "Fable"
+  - question: "What is the main character called?"
+    answer: "Protagonist"
+  - question: "Which book has a boy wizard?"
+    answer: "Harry Potter"
+  - question: "Who wrote The Odyssey?"
+    answer: "Homer"
+  - question: "What is a short poem with 17 syllables?"
+    answer: "Haiku"
+  - question: "Which book starts with 'Call me Ishmael'?"
+    answer: "Moby-Dick"
+  - question: "Who wrote The Great Gatsby?"
+    answer: "F. Scott Fitzgerald"
+  - question: "What is the opposite of a hero?"
+    answer: "Villain"
+  - question: "What is a story based on real events?"
+    answer: "Nonfiction"
+  - question: "What is a book series with rings and elves?"
+    answer: "Lord of the Rings"
+  - question: "What do you call a funny play?"
+    answer: "Comedy"
+  - question: "Who wrote 1984?"
+    answer: "George Orwell"
+  - question: "What is a sad or serious play?"
+    answer: "Tragedy"
+  - question: "What is a book about someone’s life?"
+    answer: "Biography"
+  - question: "Who wrote Frankenstein?"
+    answer: "Mary Shelley"
+  - question: "What is a group of poems called?"
+    answer: "Anthology"
+  - question: "What do you call a detective story?"
+    answer: "Mystery"
+  - question: "What is a story that teaches a lesson?"
+    answer: "Moral tale"
+  - question: "Who wrote Don Quixote?"
+    answer: "Cervantes"
+  fakeAnswers:
+  - "Three blind mice"
+  - "A lost treasure map"
+  - "Two potatoes arguing"
+  - "A knight’s snack"
+  - "Jellybean mysteries"
+  - "Singing penguins"
+  - "Pineapple stories"
+  - "The secret unicorn"
+  - "Dancing pencils"
+  - "A sleepy dragon"
+  - "An invisible book"
+  - "The banana prophecy"
+  - "A wizard’s sandwich"
+  - "Spinning donuts"
+  - "A shadow’s diary"
+  - "The last cookie"
+  - "A ghost’s love story"
+  - "Talking mountains"
+  - "Secret tea party"
+  - "A laughing cactus"
+

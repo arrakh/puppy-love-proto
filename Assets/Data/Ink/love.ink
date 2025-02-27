@@ -1,10 +1,10 @@
 
 === first_moment ===
-This is impossible, what would my parents think? #bg class #box left
+This is impossible, what would my parents think? #bg classroom #box left
 You stare at the paper in front of you. Anything other than an A is a death sentence. #box event
 Maybe I should hide this paper... #box left
 ~ addStressLevel(1)
-Feeling down after failing a class, you walk toward the shelter in the library, expecting to find solace in your usual poetry book. But instead, you see SHU leaning against the shelf, flipping through the pages of Stray Birds. #bg black #box event
+Feeling down after failing a class, you walk toward the shelter in the library, expecting to find solace in your usual poetry book. But instead, you see SHU leaning against the shelf, flipping through the pages of Stray Birds. #bg library #box event
 + Look for another copy of Stray Birds -> PRETEND
 + Talk to Shu -> DIRECT
 
@@ -28,7 +28,6 @@ Feeling down after failing a class, you walk toward the shelter in the library, 
 Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
 ~love = 1
- ~unlockActivity("textmessage")
 -> DONE
 
 === DIRECT ===
@@ -44,6 +43,5 @@ Shu handed you the book before leaving the library. Watching his figure disappea
 Shu handed you the book before leaving the library. Watching his figure disappear, you felt a little lighter, and for the first time, you found yourself looking forward to talking with SHU about Stray Birds next time. #box event
 
 ~love = 1
- ~unlockActivity("textmessage")
 -> DONE
 

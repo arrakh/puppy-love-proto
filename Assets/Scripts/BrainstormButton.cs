@@ -3,6 +3,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Utilities;
 using Random = UnityEngine.Random;
 
 namespace DefaultNamespace
@@ -16,10 +17,12 @@ namespace DefaultNamespace
         public float outputDelay = 0.2f;
         public AnimationCurve outputDelayModifier;
         public Image fillImage;
-        public Image realFillImage;
+        public Image outlineImage;
+        public Image bgImage;
         public GameObject overthinkingGroup;
         
         [Header("Animation")]
+        public Gradient overthinkingGradient;
         public RectTransform scaleParent;
         public AnimationCurve scaleCurve;
         public float scaleDuration;
@@ -29,6 +32,8 @@ namespace DefaultNamespace
         public AnimationCurve shakeCurve;
         public float shakeDistance;
         public AnimationCurve fillCurve;
+
+        public ScaleLoopAnimation scaleLoopAnim;
 
         private bool isHolding = false;
         private bool isOverthinking = false;
@@ -66,11 +71,9 @@ namespace DefaultNamespace
         {
             var a = isOverthinking ? alpha : fillCurve.Evaluate(alpha);
             
-            fillImage.fillAmount = a;
+            fillImage.fillAmount = 1f - a;
 
-            var color = realFillImage.color;
-            color.a = a;
-            realFillImage.color = color;
+            bgImage.color = outlineImage.color = overthinkingGradient.Evaluate(a);
         }
 
         private void EvaluateUpdate()
@@ -120,12 +123,14 @@ namespace DefaultNamespace
 
             if (currentOverthinkTimer < overthinkTime) return;
             isOverthinking = false;
+            currentOverthinkTimer = 0f;
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
             if (isOverthinking) return;
             
+            scaleLoopAnim.StopAnimation();
             isHolding = true;
         }
 
@@ -133,6 +138,7 @@ namespace DefaultNamespace
         {
             if (isOverthinking) return;
 
+            scaleLoopAnim.StartAnimation();
             isHolding = false;
             ResetTimers();
         }

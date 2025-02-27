@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: MusicQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "What is the symbol for music notes?"
+    answer: "Treble clef"
+  - question: "Which instrument has 88 keys?"
+    answer: "Piano"
+  - question: "What family does a trumpet belong to?"
+    answer: "Brass"
+  - question: "Who composed Beethoven’s Fifth Symphony?"
+    answer: "Beethoven"
+  - question: "What is the speed of music called?"
+    answer: "Tempo"
+  - question: "Which instrument is played with a bow?"
+    answer: "Violin"
+  - question: "Which artist is known for Thriller?"
+    answer: "Michael Jackson"
+  - question: "What is a group of singers called?"
+    answer: "Choir"
+  - question: "What is a song without instruments called?"
+    answer: "A cappella"
+  - question: "Who wrote the Four Seasons?"
+    answer: "Vivaldi"
+  - question: "What is a steady beat in music?"
+    answer: "Rhythm"
+  - question: "Which instrument has pedals and strings?"
+    answer: "Harp"
+  - question: "What is a marching band instrument?"
+    answer: "Snare drum"
+  - question: "Who wrote Swan Lake?"
+    answer: "Tchaikovsky"
+  - question: "What do you call a piano’s soft pedal?"
+    answer: "Una corda"
+  - question: "Who sang Bohemian Rhapsody?"
+    answer: "Queen"
+  - question: "What is the space between two notes called?"
+    answer: "Interval"
+  - question: "What is a quick and lively song?"
+    answer: "Allegro"
+  - question: "What is a violin made from?"
+    answer: "Wood"
+  - question: "Which instrument is often used in jazz?"
+    answer: "Saxophone"
+  fakeAnswers:
+  - "A flying drumstick"
+  - "Banana guitar"
+  - "Screaming penguins"
+  - "Triple marshmallows"
+  - "Spaghetti violin"
+  - "Invisible flutes"
+  - "Rainbow trumpets"
+  - "A magical drum"
+  - "Echoing banana"
+  - "A lost kazoo"
+  - "Dancing xylophones"
+  - "Singing strawberries"
+  - "Giant music box"
+  - "Jellybean symphony"
+  - "Bubblegum piano"
+  - "A spaghetti orchestra"
+  - "A secret lullaby"
+  - "Saxophone with wings"
+  - "Two lost violins"
+  - "The laughing piano"
+

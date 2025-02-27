@@ -1,9 +1,10 @@
 //->break
 === break === //main stitch
 { shuffle:
-    - The bell rings, {lastClass} class has ended. #bg class #box event
-    - Students rose from their seats as the {lastClass} class rings its bell. #bg class #box event
+    - The bell rings, {lastClass} class has ended. #bg classroom #box event
+    - Students rose from their seats as the {lastClass} class rings its bell. #bg classroom #box event
 }
+//~love =2
 {love == 0:
     -> normalDialogue
 - else:
@@ -81,7 +82,7 @@ You got {roll} Mood!
 -> DONE
 
 === PoetryTopic===
-"Hey, Last time you didn't tell me which one is your favorite in Stray Birds."#box right
+"Hey, Last time you didn't tell me which one is your favorite in Stray Birds."#bg classroom #box right
 "Hmm… there’s one I keep thinking about."#box left
 "Which one?"#box right  
 "'Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.'"#box left  
@@ -91,11 +92,12 @@ You got {roll} Mood!
 "Maybe. But they always find their way back to the sky."  #box left
  ~love = 2
  //test{love} love point
+ ~unlockActivity("textmessage")
  ~unlockActivity("vediocall")
 ->DONE
 
 === FoodTopic ===
-(Watching Shu eat.)  
+(Watching Shu eat.) #bg classroom #box event 
 "You're like a squirrel, you know that?"  #box left
 "Huh?"  #box right
 "The way you nibble. And how you keep small bites in your cheeks before swallowing."  #box left
@@ -108,7 +110,7 @@ You got {roll} Mood!
 ->DONE
 
 === Basketball ===
-(Watching Shu play basketball.)  
+(Watching Shu play basketball.)  #bg basketball #box event
 "Whoa, that was a nice shot!"  #box left
 "Of course."  #box right
 "Do it again."  #box left
@@ -123,6 +125,7 @@ You got {roll} Mood!
 ->DONE
 
 === Randomsentence ===
+#bg classroom
 { shuffle:
 - You and Shu talk about the exam you just had, comparing answers and sighing at the tricky questions.
 - Shu stretches lazily, tapping their pen against the desk. 'Finally, a break…'

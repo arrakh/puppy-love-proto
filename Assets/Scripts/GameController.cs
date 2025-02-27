@@ -25,10 +25,14 @@ namespace DefaultNamespace
 
         public bool hadFirstMeeting = false;
         public bool isMorning = true;
+        public bool hasFailedToday = false;
+        public bool hadFirstDinner = false;
         public SchoolClassData lastClass;
         public ActivityDatabase activityDatabase;
         
         public TaskCompletionSource<int> scheduleCompleteTsc = new();
+
+        private int dayIndex = 0;
 
         public event Action<float> onLogicUpdated; 
         public event Action<float> onMoodUpdated; 
@@ -68,7 +72,7 @@ namespace DefaultNamespace
         private IEnumerator WeekLoop(WeekData week)
         {
             plannerUi.Display(week);
-            int dayIndex = 0;
+            dayIndex = 0;
             
             foreach (var day in week.days)
             {
@@ -80,6 +84,7 @@ namespace DefaultNamespace
         private IEnumerator DayLoop(int dayIndex, DayData day)
         {
             isMorning = true;
+            hasFailedToday = false;
             variablesController.SyncVariables();
             
             yield return transitionUi.WaitTransitionIn(day.dayName, 0.6f, 1.4f);
@@ -118,6 +123,7 @@ namespace DefaultNamespace
 
                 if (!quizController.HasPassed)
                 {
+                    hasFailedToday = true;
                     if (!hadFirstMeeting) yield return DoFirstMoment();
                     else yield return DoFail(); 
                 }
@@ -179,7 +185,17 @@ namespace DefaultNamespace
 
             yield return transitionUi.WaitTransitionOut(1f);
 
-            yield return storyController.StartStory("dinner_week");
+            string path = hasFailedToday ? "dinner_fail" : "dinner_straight_a";
+            
+            if (!hadFirstDinner)
+            {
+                hadFirstDinner = true;
+                path = "dinner_first_time";
+            }
+
+            if (dayIndex == 4) path = "dinner_week";
+
+            yield return storyController.StartStory(path);
         }
 
         private IEnumerator DoClass(SchoolClassData data)

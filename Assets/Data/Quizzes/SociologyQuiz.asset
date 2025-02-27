@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: SociologyQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "What is the study of society?"
+    answer: "Sociology"
+  - question: "What is a group of people called?"
+    answer: "Community"
+  - question: "What do you call shared beliefs?"
+    answer: "Culture"
+  - question: "What is the basic unit of society?"
+    answer: "Family"
+  - question: "Who studies human behavior in groups?"
+    answer: "Sociologist"
+  - question: "What do we call rules in society?"
+    answer: "Norms"
+  - question: "What is a system of government?"
+    answer: "Politics"
+  - question: "What is an unfair opinion about a group?"
+    answer: "Prejudice"
+  - question: "What is treating people unfairly called?"
+    answer: "Discrimination"
+  - question: "What do we call a person’s role in society?"
+    answer: "Social status"
+  - question: "What is a custom passed through generations?"
+    answer: "Tradition"
+  - question: "What is learning how to behave called?"
+    answer: "Socialization"
+  - question: "What is a group with shared culture?"
+    answer: "Ethnicity"
+  - question: "What is a way of organizing people?"
+    answer: "Hierarchy"
+  - question: "What is a large group of people living together?"
+    answer: "Society"
+  - question: "What do you call forced conformity?"
+    answer: "Social pressure"
+  - question: "What is a belief in equality?"
+    answer: "Human rights"
+  - question: "What is the act of working together?"
+    answer: "Cooperation"
+  - question: "What is a small social group?"
+    answer: "Peer group"
+  - question: "What is an expected way of behaving?"
+    answer: "Social norm"
+  fakeAnswers:
+  - "A lonely pineapple"
+  - "An invisible society"
+  - "Five dancing neighbors"
+  - "Secret government cookies"
+  - "Three lost traditions"
+  - "A giant family tree"
+  - "Banana democracy"
+  - "A hidden civilization"
+  - "A magical handshake"
+  - "The power of marshmallows"
+  - "A secret dance club"
+  - "A talking history book"
+  - "A ninja philosophy"
+  - "The great pizza debate"
+  - "A mystical handshake"
+  - "A ghostly community"
+  - "A floating social island"
+  - "An underground village"
+  - "A town of musicians"
+  - "A superhero society"
+

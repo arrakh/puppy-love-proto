@@ -12,7 +12,7 @@ namespace DefaultNamespace
         
         //todo: HANDLE THESE BETTER WITH DICTIONARIES
         public DialogueTextBox leftBox, rightBox, eventBox;
-        public GameObject schoolBg, breakBg, blackBg, dinnerBg;
+        public GameObject[] backgrounds;
 
         private void Awake()
         {
@@ -45,24 +45,9 @@ namespace DefaultNamespace
         private void SetBackground(string background)
         {
             if (string.IsNullOrWhiteSpace(background)) return;
-            
-            schoolBg.gameObject.SetActive(false);
-            breakBg.gameObject.SetActive(false);
-            blackBg.gameObject.SetActive(false);
-            dinnerBg.gameObject.SetActive(false);
 
-            GameObject bg;
-
-            switch (background)
-            {
-                case "school": bg = schoolBg; break;
-                case "break": bg = breakBg; break;
-                case "black": bg = blackBg; break;
-                case "dinner": bg = dinnerBg; break;
-                default: return;
-            }
-            
-            bg.gameObject.SetActive(true);
+            foreach (var obj in backgrounds)
+                obj.SetActive(obj.name.Equals(background));
         }
 
         private void PositionBox(string pos)
