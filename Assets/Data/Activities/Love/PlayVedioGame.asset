@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e3cdd722d840e68075fd394d2afbcc, type: 3}
   m_Name: PlayVedioGame
   m_EditorClassIdentifier: 
-  displayName: PlayVedioGame
+  displayName: Play Games w/ Shu
   activityId: playvediogame
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 0
+  moodGain: 2
+  stressGain: -1

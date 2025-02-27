@@ -62,7 +62,8 @@ You got {roll} Mood!
 -> DONE
 
 === MovieTopic ===
- "Shu comes to my seat and knocks on the desk. He smiles and takes out a movie CD, asking 'Do you like horror movies?'"
+ Shu comes to my seat and knocks on the desk, smiling while taking out a movie CD.  #bg classroom #box event
+ Do you like horror movies? #box right
     + "Yes, I love horror movies."
         ~ horrorlove = true
         -> horrorMovieResponse
@@ -70,13 +71,13 @@ You got {roll} Mood!
         -> romanticMovieResponse
         
 === horrorMovieResponse ===
-"Great! We should watch one together sometime."
+"Great! We should watch one together sometime." #box right
 ~love =5
 ~unlockActivity("watchmovie")
 -> DONE
 
 === romanticMovieResponse ===
-"Oh, I see! Maybe we can watch a romantic movie together?"
+"Oh, I see! Maybe we can watch a romantic movie together?" #box right
 ~love =5
 ~unlockActivity("watchmovie")
 -> DONE
@@ -97,7 +98,7 @@ You got {roll} Mood!
 ->DONE
 
 === FoodTopic ===
-(Watching Shu eat.) #bg classroom #box event 
+As you approach, you see Shu greedily munching lunch #bg classroom #box event 
 "You're like a squirrel, you know that?"  #box left
 "Huh?"  #box right
 "The way you nibble. And how you keep small bites in your cheeks before swallowing."  #box left
@@ -110,7 +111,9 @@ You got {roll} Mood!
 ->DONE
 
 === Basketball ===
-(Watching Shu play basketball.)  #bg basketball #box event
+It seems that Shu is out practicing... #bg classroom #box event
+It seems unnatural for you to be in the gymnasium outside of PE classes, but you are here anyway. #bg basketball 
+You see Shu efficiently swerving around other players, shooting the ball
 "Whoa, that was a nice shot!"  #box left
 "Of course."  #box right
 "Do it again."  #box left
@@ -120,8 +123,9 @@ You got {roll} Mood!
 "Both, obviously."  #box left
 "Damn. I should start charging tickets." #box right
  ~love = 4
-(Shu laughs, takes another shot—swish. )#box event
+(Shu laughs and takes another shot—swish. )#box event
  ~unlockActivity("playvediogame")
+ ~unlockActivity("self_quiz")
 ->DONE
 
 === Randomsentence ===
@@ -143,7 +147,7 @@ You got {roll} Mood!
 -> DONE
 
 === handwriting ===
-You accidentally came across his essay. The paper was clean and neat, even carrying a faint fragrance. To your surprise, his handwriting was exceptionally beautiful, showing the care and effort he put into writing it. It left a very good impression on you.
+You accidentally came across Shu's essay. The paper was clean and neat, even carrying a faint fragrance. To your surprise, the handwriting was exceptionally beautiful, showing care and effort put into writing it. It left a very good impression on you.
 + "Wow, your handwriting is really nice!"
     "ahh, Thank you"
     -> DONE

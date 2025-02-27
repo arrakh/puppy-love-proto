@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 596a6b310f4f4ee6af36f5ce8984e8c8, type: 3}
-  m_Name: History
+  m_Name: 1_Physics_Tue
   m_EditorClassIdentifier: 
-  displayName: History
-  entries: {fileID: 11400000, guid: a5dadb842835b7a40933f2d8ee9c337b, type: 2}
+  displayName: Physics
+  entries: {fileID: 11400000, guid: bfbf1cf16babcf04a85ce991841a45ae, type: 2}
   parameters:
-    baseTimer: 60
-    quizCount: 10
-    passingGrade: 9
+    baseTimer: 30
+    quizCount: 5
+    passingGrade: 2
     otherAnswersCount: 1
     fakeAnswersCount: 1
-    drainPerFocus: 1.3
-    classLogicToMoodRatio: 0.7
+    drainPerFocus: 0.8
+    classLogicToMoodRatio: 1

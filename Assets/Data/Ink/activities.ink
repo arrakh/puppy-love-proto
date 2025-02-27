@@ -1,26 +1,62 @@
 === activity_memorize ===
-Doing memory...
+{ shuffle:
+- You memorized tomorrow's class materials...
+- You reviewed your notes and tested yourself on the key points...
+- You repeated important facts in your head until they stuck...
+- You used flashcards to reinforce what you learned...
+- You tried to recall what you studied yesterday to strengthen memory...
+}
 ~ addLogic(1)
 -> END
 
 === activity_appreciate ===
-Appreciating art... #bg black #box event
-~ addMood(1)
-~ unlockActivity("self_quiz")
+{ shuffle:
+- You listen to some classical music, focusing on the intricacies of the melody and rhythm...
+- You researched modern painting and examined how it makes you feel...
+- You watched a documentary about an artist and their work...
+- You took a moment to admire the architecture of a nearby building...
+- You listened to a poem being recited and reflected on its meaning...
+}
+~ addMood(2)
 -> END
 
 === activity_writing ===
-Writing stories...
+{ shuffle:
+- You wrote a short story on success...
+- You jotted down your thoughts in a journal...
+- You created a poem about nature...
+- You crafted a letter to your future self...
+- You described a dream you had in vivid detail...
+}
 ~ addMood(1)
--> END
-
-=== activity_exercise ===
-Stretching limbs...
 ~ addLogic(1)
 -> END
 
+=== activity_self_quiz ===
+{ shuffle:
+- You tested yourself with a few tricky questions...
+- You tried to recall facts from memory without checking your notes...
+- You challenged yourself with a set of flashcards...
+- You wrote down answers to random questions to see what you still remember...
+- You created a quiz for yourself and tried to beat your previous score...
+}
+~ addLogic(2)
+-> END
+
+=== activity_exercise ===
+{ shuffle:
+- You did some push ups...
+- You went for a quick jog around the block...
+- You stretched to loosen up your muscles...
+- You practiced balancing on one foot for a minute...
+- You lifted some light weights to build endurance...
+}
+~ addMood(1)
+-> END
+
 === activity_watchmovie ===
-...
+You decided to text Shu. #bg text #box event
+Movie at your place? #box left
 {isMorning == true:
     -> cantMovie
 - else:
@@ -28,10 +64,12 @@ Stretching limbs...
 }
 -> END
 === cantMovie ===
-It's morning! Better to study...
+It's 7AM and we have class soon, what are you talking about #box right
+Right... #box left
 -> DONE
 
 === watchMovie ===
+Yep, see you there #box right
 {horrorlove == false:
     ->horrorMovie
 - else:
@@ -39,7 +77,7 @@ It's morning! Better to study...
 }
 ->DONE
 === horrorMovie ===
-TV glow paints their faces blue. A door creaks onscreen.#bg movie #box event
+TV glow paints both of your faces blue. A door creaks onscreen.#bg movie #box event
 "This was your brilliant date idea?"#box left
 "Yep, because I noticed someone literally googled 'how to look brave' yesterday—"#box right
 
@@ -54,8 +92,9 @@ Silence. Their shoulders tense as the killer’s footsteps resume.#box event
 "Shuuu! We should focus on the movie."#box left
 ~ addMood(1)
 ->DONE
+
 === romanticMovie ===
-Screen flickers with the ballroom scene from Pride and Prejudice. His knee hasn’t stopped jiggling since the third corset-lacing montage.#bg movie #box event
+The screen flickers with the ballroom scene from Pride and Prejudice. Shu's knees hasn’t stopped jiggling since the third corset-lacing montage.#bg movie #box event
 "You’re judging Darcy harder than my mom judges my math scores."#box left
 "Bro took 90 minutes to say ‘I like you’." (snorts) "Could've DMed her."#box right
 "Says the guy who circled my desk 17 times before asking for a pen."#box left
@@ -93,7 +132,7 @@ Phone screen glows. A new message from SHU.#bg text #box event
 -> END
 
 === activity_vediocall ===
-You are lying on bed, staring at the ceiling, on the phone with SHU.#bg vedio #box event
+You are lying on bed, staring at the ceiling, on the phone with SHU.#bg video #box event
 "Ugh. I hate this."#box right
 "What now?"#box left
 "Everyone keeps asking what major I’m choosing. I have no idea!"#box right
@@ -114,7 +153,7 @@ You are lying on bed, staring at the ceiling, on the phone with SHU.#bg vedio #b
 "I know. That’s why I suggested it."#box left
 "Alright, fine. Send me the list. Just don’t put math on there."#box right
 "No promises."#box left
-~ addMood(0)
+~ addMood(1)
 -> END
 
 === activity_studytogether ===
