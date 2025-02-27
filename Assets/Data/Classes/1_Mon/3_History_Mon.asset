@@ -15,9 +15,9 @@ MonoBehaviour:
   displayName: History
   entries: {fileID: 11400000, guid: a5dadb842835b7a40933f2d8ee9c337b, type: 2}
   parameters:
-    baseTimer: 40
-    quizCount: 5
-    passingGrade: 1
+    baseTimer: 5
+    quizCount: 8
+    passingGrade: 7
     otherAnswersCount: 1
     fakeAnswersCount: 1
     drainPerFocus: 0.8

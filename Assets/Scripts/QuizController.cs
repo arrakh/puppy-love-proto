@@ -29,6 +29,7 @@ public class QuizController : MonoBehaviour
     public Timer timer;
     public Color[] colors;
     public string[] stressDistractions;
+    public string[] loveDistractions;
     public RectTransform runnerRect;
     public RectTransform progressRect;
     public Image progressFill;

@@ -20,5 +20,5 @@ MonoBehaviour:
     passingGrade: 7
     otherAnswersCount: 2
     fakeAnswersCount: 2
-    drainPerFocus: 0.8
+    drainPerFocus: 1.8
     classLogicToMoodRatio: 1

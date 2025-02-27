@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596a6b310f4f4ee6af36f5ce8984e8c8, type: 3}
+  m_Name: N_1_Physics_Fri
+  m_EditorClassIdentifier: 
+  displayName: Physics
+  entries: {fileID: 11400000, guid: c11a8fb6b13645e4780c1a7089967d2a, type: 2}
+  parameters:
+    baseTimer: 5
+    quizCount: 10
+    passingGrade: 8
+    otherAnswersCount: 3
+    fakeAnswersCount: 4
+    drainPerFocus: 1.8
+    classLogicToMoodRatio: 1

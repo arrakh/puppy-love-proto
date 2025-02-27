@@ -17,8 +17,10 @@ namespace DefaultNamespace
         public QuizController quizController;
         public BrainstormButton brainstormButton;
         public Button focusButton;
+        public Image focusSlider;
         public AnswerButton prefab;
         public RectTransform holder;
+        public GameObject focusUnavailable;
 
         private List<AnswerButton> spawnedAnswers = new();
         private List<AnswerButton> spawnedDistractions = new();
@@ -28,6 +30,14 @@ namespace DefaultNamespace
             brainstormButton.OnBrainstorm += OnBrainstorm;
             focusButton.onClick.AddListener(OnFocus);
             UpdateFocusVisual();
+        }
+
+        void Update()
+        {
+            var logicCost = drainPerFocus * classLogicToMoodRatio;
+            var moodCost = drainPerFocus * (1 - classLogicToMoodRatio);
+
+            focusUnavailable.SetActive(gameController.logic < logicCost || gameController.mood < moodCost);
         }
 
         private void OnFocus()
@@ -56,6 +66,35 @@ namespace DefaultNamespace
                 
             spawnedAnswers.Add(button);
 
+            SpawnStressDistraction();
+            SpawnLoveDistraction();
+
+            UpdateFocusVisual();
+        
+            
+        }
+
+        private void SpawnLoveDistraction()
+        {
+            var loveChance = gameController.love * 0.12;
+
+            var shouldSpawnDistraction = Random.value < loveChance;
+            if (!shouldSpawnDistraction) return;
+
+            var loveCount = Mathf.FloorToInt(gameController.love / 2f);
+            var distractions = quizController.loveDistractions.OrderBy(_ => Random.value).Take(loveCount);
+            foreach (var distraction in distractions)
+            {
+                //TODO: TO PERSONALIZE DISTRACTION, SPAWN FROM SOMEWHERE ELSE, NOT ANSWER BUTTON
+                var distractionBtn = Instantiate(prefab, holder);
+                distractionBtn.Set(holder, new Color(1f, 153/255f, 1f), Color.black, distraction, null);
+                
+                spawnedDistractions.Add(distractionBtn);
+            }
+        }
+
+        private void SpawnStressDistraction()
+        {
             var shouldSpawnDistraction = Random.value < GetDistractionChance(gameController.stressLevel);
             if (!shouldSpawnDistraction) return;
 
@@ -69,8 +108,6 @@ namespace DefaultNamespace
                 
                 spawnedDistractions.Add(distractionBtn);
             }
-            
-            UpdateFocusVisual();
         }
 
         public void ClearAnswers()
@@ -105,6 +142,8 @@ namespace DefaultNamespace
         {
             drainPerFocus = parameters.drainPerFocus; 
             classLogicToMoodRatio = parameters.classLogicToMoodRatio;
+
+            focusSlider.fillAmount = parameters.classLogicToMoodRatio;
 
             brainstormButton.ApplyParameters(parameters);
         }

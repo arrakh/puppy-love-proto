@@ -12,6 +12,7 @@ namespace DefaultNamespace
         public float logic = 10f;
         public float mood = 10f;
         public int stressLevel = 0;
+        public int love = 0;
 
         public WeekData[] weeks;
         public QuizController quizController;
@@ -142,6 +143,8 @@ namespace DefaultNamespace
             isMorning = false;
             variablesController.SyncVariables();
 
+            if (stressLevel >= 4) yield return DoGameOver();
+
             //SECOND AND THIRD ACTIVITY
             for (int i = 1; i < 3; i++)
             {
@@ -154,6 +157,16 @@ namespace DefaultNamespace
             yield return DoDinner();
 
             scheduleCompleteTsc = new();
+        }
+
+        private IEnumerator DoGameOver()
+        {
+            yield return transitionUi.WaitTransitionIn("", 2f);
+            SetState(State.DIALOGUE);
+            yield return transitionUi.WaitTransitionOut(0.2f);
+
+            yield return storyController.StartStory("game_over");
+            yield return transitionUi.WaitTransitionIn("GAME OVER", 0f, 999999999f);
         }
 
         private IEnumerator DoFail()

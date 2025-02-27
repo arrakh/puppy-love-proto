@@ -15,10 +15,10 @@ MonoBehaviour:
   displayName: Art
   entries: {fileID: 11400000, guid: f4bfa4166e9087f458071efa47fb1f66, type: 2}
   parameters:
-    baseTimer: 15
-    quizCount: 5
-    passingGrade: 4
-    otherAnswersCount: 1
+    baseTimer: 10
+    quizCount: 10
+    passingGrade: 6
+    otherAnswersCount: 2
     fakeAnswersCount: 2
-    drainPerFocus: 0.8
+    drainPerFocus: 1.8
     classLogicToMoodRatio: 0

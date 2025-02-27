@@ -15,10 +15,10 @@ MonoBehaviour:
   displayName: Biology
   entries: {fileID: 11400000, guid: f1f9abe7f50d3dc4ebff91c753ce0a14, type: 2}
   parameters:
-    baseTimer: 15
+    baseTimer: 5
     quizCount: 10
     passingGrade: 8
     otherAnswersCount: 3
     fakeAnswersCount: 4
-    drainPerFocus: 0.8
+    drainPerFocus: 1.8
     classLogicToMoodRatio: 1

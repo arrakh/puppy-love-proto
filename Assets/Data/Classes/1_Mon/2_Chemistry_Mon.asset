@@ -15,9 +15,9 @@ MonoBehaviour:
   displayName: Chemistry
   entries: {fileID: 11400000, guid: 69b58488ead34754585fa6807e7511b7, type: 2}
   parameters:
-    baseTimer: 50
-    quizCount: 5
-    passingGrade: 1
+    baseTimer: 20
+    quizCount: 7
+    passingGrade: 3
     otherAnswersCount: 1
     fakeAnswersCount: 0
     drainPerFocus: 0.8

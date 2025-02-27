@@ -15,10 +15,10 @@ MonoBehaviour:
   displayName: Music
   entries: {fileID: 11400000, guid: 61c02d2d38f3af64eb319a2f93e1470f, type: 2}
   parameters:
-    baseTimer: 15
+    baseTimer: 5
     quizCount: 10
     passingGrade: 8
     otherAnswersCount: 3
     fakeAnswersCount: 4
-    drainPerFocus: 1.8
+    drainPerFocus: 2.8
     classLogicToMoodRatio: 0

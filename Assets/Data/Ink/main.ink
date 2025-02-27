@@ -42,3 +42,11 @@ Yawn... \<i>(Click anywhere to continue) #bg black #box left
 The piece of paper stares at you, reminding you of your failure...
 ~ addStressLevel(1)
 -> END
+
+=== game_over ===
+The throbbing in your head doesn't stop #bg black #box event
+Unnatural to your routine, your feet stops by a bridge on the way home.
+This is stupidly out of character... #box left
+For a single moment, you entertain the thought. #box event
+-> END
+

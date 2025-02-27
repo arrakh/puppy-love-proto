@@ -42,8 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 13
-  m_BakeOnSceneLoad: 0
+  serializedVersion: 12
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -197,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyController: {fileID: 1628058639}
   storyInk: {fileID: 4900000, guid: ff55d416e499aa747988ed11c9659c73, type: 3}
-  startPath: dinner_week
+  startPath: break
 --- !u!4 &1027401979
 Transform:
   m_ObjectHideFlags: 0

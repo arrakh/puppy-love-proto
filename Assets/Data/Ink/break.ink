@@ -27,8 +27,7 @@ What would you like to do before the next class?
 
 === study_logic ===
 You memorized some materials in the meantime...
-~ temp roll = RANDOM(10, 30) / 10.0
-You got {roll} Logic!
+~ temp roll = RANDOM(1, 12) / 10.0
 ~ addLogic(roll)
 -> DONE
 
@@ -37,8 +36,7 @@ You got {roll} Logic!
     - You listen to some music
     - You admired the scenic nature outside the window
 }
-~ temp roll = RANDOM(5, 20) / 10.0
-You got {roll} Mood!
+~ temp roll = RANDOM(3, 8) / 10.0
 ~ addMood(roll)
 -> DONE
 

@@ -24,6 +24,7 @@ namespace DefaultNamespace
         {
             gameController.scheduleCompleteTsc.SetResult(0);
         }
+
         private void Awake()
         {
             confirmButton.onClick.AddListener(OnConfirm);
@@ -64,6 +65,8 @@ namespace DefaultNamespace
                 var slot = classSlots[i];
                 slot.Display(dayData.classes[i]);
             }
+
+            EvaluateConfirm();
         }
         
         private void OnSlotClicked(ActivitySlot clicked)

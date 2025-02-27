@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4551e19e0c634931880b667263db9a4f, type: 3}
+  m_Name: Week1Nonsense
+  m_EditorClassIdentifier: 
+  days:
+  - dayName: Monday
+    classes:
+    - {fileID: 11400000, guid: 3f055aa2b101ec841beaee473a48ebbd, type: 2}
+    - {fileID: 11400000, guid: 34e4a37aa484dde4fb334614f96e9810, type: 2}
+    - {fileID: 11400000, guid: 4480330a95b71124692990709bc88ea4, type: 2}
+  - dayName: Tuesday
+    classes:
+    - {fileID: 11400000, guid: 70d2d3af1b195ff42b2b77c5e435b63e, type: 2}
+    - {fileID: 11400000, guid: ff66d3cf92f8f8842881461248958310, type: 2}
+    - {fileID: 11400000, guid: 9efdc79f0f5a01c4aadb12d95c69b117, type: 2}
+  - dayName: Wednesday
+    classes:
+    - {fileID: 11400000, guid: e61b50f288f67bf4c81d98615b855eab, type: 2}
+    - {fileID: 11400000, guid: cc69f7180e8438b42b7072f849f8b2c5, type: 2}
+    - {fileID: 11400000, guid: 91a79819d8a9d944e945cc57a7e1f795, type: 2}
+  - dayName: Thursday
+    classes:
+    - {fileID: 11400000, guid: 4dc1f4fdf830d4a41b5f5d50b6abb7b5, type: 2}
+    - {fileID: 11400000, guid: a415d2b59959a154f85418bf7f70dc59, type: 2}
+    - {fileID: 11400000, guid: 26d310a308ed52445bf8c5de0c4c3ffd, type: 2}
+  - dayName: Friday
+    classes:
+    - {fileID: 11400000, guid: 943f30d7b469d834abe423da5a65d729, type: 2}
+    - {fileID: 11400000, guid: c693762425c00784d8a5d8dc271bd70b, type: 2}
+    - {fileID: 11400000, guid: f1ddc2c414300f648b76bedde0b32b0b, type: 2}

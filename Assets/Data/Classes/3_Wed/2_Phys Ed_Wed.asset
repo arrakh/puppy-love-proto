@@ -15,10 +15,10 @@ MonoBehaviour:
   displayName: Phys Ed
   entries: {fileID: 11400000, guid: cdd18b162a85a5a45bfef343fbb1aeac, type: 2}
   parameters:
-    baseTimer: 30
+    baseTimer: 6
     quizCount: 7
     passingGrade: 4
     otherAnswersCount: 2
     fakeAnswersCount: 2
-    drainPerFocus: 1.5
+    drainPerFocus: 2.5
     classLogicToMoodRatio: 0.2

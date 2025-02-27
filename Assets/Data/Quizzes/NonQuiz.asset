@@ -33,4 +33,45 @@ MonoBehaviour:
     answer: With glitter and patience
   - question: Why do stars refuse to wear hats?
     answer: They prefer to shine bare-headed
-  fakeAnswers: []
+  - question: What color is the sound of silence?
+    answer: Invisible blue
+  - question: How many pancakes does it take to build a spaceship?
+    answer: Seventeen, if you stack them correctly
+  - question: Why do oranges wear sunglasses at night?
+    answer: To avoid being mistaken for the moon
+  - question: Who invented the art of whispering to clouds?
+    answer: Professor Nimbus Whisperstein
+  - question: How long is a piece of spaghetti in dog years?
+    answer: Four and a half barks
+  - question: What language do shadows speak?
+    answer: Fluent darkness
+  - question: Why do clocks refuse to tick backwards?
+    answer: "Because they\u2019re allergic to regrets"
+  - question: What is the national anthem of Atlantis?
+    answer: Bubbles in Harmony
+  - question: How do you train a unicorn to bake a cake?
+    answer: With glitter and patience
+  - question: Why do stars refuse to wear hats?
+    answer: They prefer to shine bare-headed
+  fakeAnswers:
+  - Definitely ketchup art
+  - 12 spoons of paint
+  - Banana taped to wall
+  - 7 dots of mystery
+  - 3D spaghetti sculpture
+  - A melted pizza slice
+  - 5 crayons in space
+  - Rainbow soup theory
+  - Napkin folding 101
+  - Cheese melting art
+  - Bubblegum canvas
+  - 3 brushes, no paint
+  - Invisible sculpture
+  - Marble pudding bowl
+  - 8 colors of shadow
+  - Muddy footprints art
+  - Scribbles of destiny
+  - Sticky note masterpiece
+  - Shadow dancing
+  - Fluffy cloud painting
+  - 

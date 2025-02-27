@@ -6,9 +6,8 @@ What did you say? #box right
 Nothing, father #box left
 Your father and I would rather work too, but you know this is tradition. #box right
 Yes, mother #box left
-Now stop with that nonsense and eat. #box Alright
+Now stop with that nonsense and eat. #box right
 ~ addStressLevel(1)
-
 -> END
 
 === dinner_week ===

@@ -15,10 +15,10 @@ MonoBehaviour:
   displayName: Sociology
   entries: {fileID: 11400000, guid: f9384fcb683273a438d3fa65f10f7e49, type: 2}
   parameters:
-    baseTimer: 30
+    baseTimer: 6
     quizCount: 7
     passingGrade: 4
     otherAnswersCount: 2
     fakeAnswersCount: 2
-    drainPerFocus: 1.2
+    drainPerFocus: 2.2
     classLogicToMoodRatio: 0.5

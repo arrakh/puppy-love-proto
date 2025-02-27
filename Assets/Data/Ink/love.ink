@@ -9,7 +9,7 @@ But instead, you see a familiar figure leaning against the shelf, flipping throu
 You faintly recognize this person.
 Shu is one of those classmates outside of your peripheral vision, making obnoxious noises and laughing out loud with friends.
 Yet here, this figure is unnaturally quite and attentive, almost as if out of character.
-Almost... alluring.
+Almost... alluring?
 + Look for another copy of Stray Birds -> PRETEND
 + Talk to Shu -> DIRECT
 

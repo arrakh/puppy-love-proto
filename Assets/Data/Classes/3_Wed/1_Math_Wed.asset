@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Math
   entries: {fileID: 11400000, guid: 1817aa1df89e8e3499f74d029eb38837, type: 2}
   parameters:
-    baseTimer: 30
+    baseTimer: 8
     quizCount: 7
     passingGrade: 4
     otherAnswersCount: 2

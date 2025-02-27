@@ -12,6 +12,7 @@ namespace DefaultNamespace
         private const string LAST_CLASS = "lastClass";
         private const string HAS_FIRST_MEETING = "stressLevel";
         private const string IS_MORNING = "isMorning";
+        private const string LOVE = "love";
         
         public InkStoryController storyController;
         public GameController gameController;
@@ -24,6 +25,8 @@ namespace DefaultNamespace
 
         public void SyncVariables()
         {
+            gameController.love = (int) story.variablesState[LOVE];
+
             story.variablesState[MOOD] = gameController.mood;
             story.variablesState[LOGIC] = gameController.logic;
             story.variablesState[STRESS_LEVEL] = gameController.stressLevel;
