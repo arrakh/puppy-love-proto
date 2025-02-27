@@ -136,13 +136,14 @@ public class QuizController : MonoBehaviour
         //Other Answers
         var minOtherAnswerCount = Mathf.Min(currentEntry.entries.Length, otherAnswersCount);
         var otherAnswers = currentEntry.entries.Select(x => x.answer)
+            .Where(x => !x.Equals(currentQuiz.answer))
             .OrderBy(_ => Random.value).Take(minOtherAnswerCount);
 
         foreach (var answer in otherAnswers) answerPool.Add(new (answer, colorQueue.Dequeue()));
 
         //Fake Answers
-        var fakeAnswers = currentEntry.fakeAnswers.Take(fakeAnswersCount)
-            .Select(x => new QuizGameAnswer(x, colorQueue.Dequeue()));
+        var fakeAnswers = currentEntry.fakeAnswers.OrderBy(_ => Random.value)
+            .Take(fakeAnswersCount).Select(x => new QuizGameAnswer(x, colorQueue.Dequeue()));
         answerPool.AddRange(fakeAnswers);
     }
 

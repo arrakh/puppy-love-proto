@@ -39,7 +39,7 @@ It's morning! Better to study...
 }
 ->DONE
 === horrorMovie ===
-TV glow paints their faces blue. A door creaks onscreen.#bg movie #box event
+TV glow paints their faces blue. A door creaks onscreen.#box event
 "This was your brilliant date idea?"#box left
 "Yep, because I noticed someone literally googled 'how to look brave' yesterday—"#box right
 
@@ -55,7 +55,7 @@ Silence. Their shoulders tense as the killer’s footsteps resume.#box event
 ~ addMood(1)
 ->DONE
 === romanticMovie ===
-Screen flickers with the ballroom scene from Pride and Prejudice. His knee hasn’t stopped jiggling since the third corset-lacing montage.#bg movie #box event
+Screen flickers with the ballroom scene from Pride and Prejudice. His knee hasn’t stopped jiggling since the third corset-lacing montage.#box event
 "You’re judging Darcy harder than my mom judges my math scores."#box left
 "Bro took 90 minutes to say ‘I like you’." (snorts) "Could've DMed her."#box right
 "Says the guy who circled my desk 17 times before asking for a pen."#box left
@@ -65,7 +65,7 @@ Screen flickers with the ballroom scene from Pride and Prejudice. His knee hasn�
 -> DONE
 
 === activity_playvediogame ===
-It takes Two is quite popular in class recently.#bg game #box event
+It takes Two is quite popular in class recently.#box event
 "Alright, you push the block, and I'll stand on the switch."#box left
 "Got it! pushes the block the wrong way"#box right
 "SHU!"#box left
@@ -77,7 +77,7 @@ It takes Two is quite popular in class recently.#bg game #box event
 -> END
 
 === activity_textmessage ===
-Phone screen glows. A new message from SHU.#bg text #box event
+Phone screen glows. A new message from SHU.#box event
 "You asleep?"#box right
 "Almost. Why?"#box left
 "Just thinking."#box right
@@ -93,7 +93,7 @@ Phone screen glows. A new message from SHU.#bg text #box event
 -> END
 
 === activity_vediocall ===
-You are lying on bed, staring at the ceiling, on the phone with SHU.#bg vedio #box event
+You are lying on bed, staring at the ceiling, on the phone with SHU.#box event
 "Ugh. I hate this."#box right
 "What now?"#box left
 "Everyone keeps asking what major I’m choosing. I have no idea!"#box right
@@ -118,7 +118,7 @@ You are lying on bed, staring at the ceiling, on the phone with SHU.#bg vedio #b
 -> END
 
 === activity_studytogether ===
-PLAYVEDIOGAME#bg desk #box left
+PLAYVEDIOGAME#box left
 You are reading, SHU is lying on the table, groaning.#box event
 "I can’t do this anymore. I’m gonna pass out."#box right
 "We’ve studied for 20 minutes."#box left

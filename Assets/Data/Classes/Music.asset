@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Music
   m_EditorClassIdentifier: 
   displayName: Music
-  entries: {fileID: 0}
+  entries: {fileID: 11400000, guid: 61c02d2d38f3af64eb319a2f93e1470f, type: 2}
   parameters:
     baseTimer: 20
     quizCount: 3
     passingGrade: 2
     otherAnswersCount: 4
     fakeAnswersCount: 3
-    colorCount: 4
     drainPerFocus: 1.3
     classLogicToMoodRatio: 0.7

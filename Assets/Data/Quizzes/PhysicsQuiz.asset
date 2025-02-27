@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b689e616021d4d5a821d1de96f1a8dd1, type: 3}
+  m_Name: PhysicsQuiz
+  m_EditorClassIdentifier: 
+  entries:
+  - question: "What force pulls objects to Earth?"
+    answer: "Gravity"
+  - question: "What is the unit of force?"
+    answer: "Newton"
+  - question: "What is the speed of light in m/s?"
+    answer: "299,792,458"
+  - question: "What state of matter is water?"
+    answer: "Liquid"
+  - question: "What energy comes from the sun?"
+    answer: "Solar energy"
+  - question: "What is the formula for speed?"
+    answer: "Distance/time"
+  - question: "Which color has the shortest wavelength?"
+    answer: "Violet"
+  - question: "What type of energy does a moving car have?"
+    answer: "Kinetic energy"
+  - question: "Which particle has a negative charge?"
+    answer: "Electron"
+  - question: "What does a thermometer measure?"
+    answer: "Temperature"
+  - question: "Which simple machine is a ramp?"
+    answer: "Inclined plane"
+  - question: "What is the SI unit of power?"
+    answer: "Watt"
+  - question: "What is the third law of motion?"
+    answer: "Action = reaction"
+  - question: "What does an ammeter measure?"
+    answer: "Current"
+  - question: "What waves allow us to see?"
+    answer: "Light waves"
+  - question: "Which force resists motion?"
+    answer: "Friction"
+  - question: "What type of lens makes objects bigger?"
+    answer: "Convex lens"
+  - question: "What is absolute zero in °C?"
+    answer: "-273°C"
+  - question: "What is the boiling point of water?"
+    answer: "100°C"
+  - question: "Which planet has the strongest gravity?"
+    answer: "Jupiter"
+  fakeAnswers:
+  - "Two bouncing apples"
+  - "Definitely moon cheese"
+  - "1,000 tiny magnets"
+  - "Three sneaky protons"
+  - "An upside-down rainbow"
+  - "A flying spaceship"
+  - "Banana-powered light"
+  - "The color of bubbles"
+  - "An invisible rollercoaster"
+  - "Gravity-proof shoes"
+  - "A giant telescope"
+  - "Quantum pancakes"
+  - "Magic friction beans"
+  - "Five floating ice cubes"
+  - "A hidden black hole"
+  - "An anti-gravity cat"
+  - "Super fast bananas"
+  - "The lost force of donuts"
+  - "A zero-gravity cake"
+  - "Mysterious space waves"
+
