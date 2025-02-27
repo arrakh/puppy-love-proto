@@ -21,10 +21,10 @@ How was your week? Anything worth mentioning? #box right #bg dinner
 
 === dinner_straight_a ===
 { shuffle:
-- Your college entrance exam is the most important thing right now. Just focus on studying—nothing else matters.
-- Make sure you study hard. Don’t think I’m nagging for no reason—we’re only doing this for your own good.
-- Your test scores are not bad — keep up the good work.
-- You've improved, not bad.
+- Your college entrance exam is the most important thing right now. Just focus on studying—nothing else matters.#bg dinner
+- Make sure you study hard. Don’t think I’m nagging for no reason—we’re only doing this for your own good.#bg dinner
+- Your test scores are not bad — keep up the good work.#bg dinner
+- You've improved, not bad.#bg dinner
 }
 
 -> END
@@ -32,11 +32,11 @@ How was your week? Anything worth mentioning? #box right #bg dinner
 
 === dinner_fail ===
 { shuffle:
-- Why did your grades drop? You need to work harder.
-- No more distractions. From now on, focus only on your studies!
-- Stop wasting time and focus on your studies! You can't afford to slack off.
-- Other students can manage good grades, so why can’t you? You need to work harder!
-- You’re not a child anymore. It’s time to take responsibility for your own future.
+- Why did your grades drop? You need to work harder.#bg dinner
+- No more distractions. From now on, focus only on your studies!#bg dinner
+- Stop wasting time and focus on your studies! You can't afford to slack off.#bg dinner
+- Other students can manage good grades, so why can’t you? You need to work harder!#bg dinner
+- You’re not a child anymore. It’s time to take responsibility for your own future.#bg dinner
 }
 ~ addStressLevel(1)
 
