@@ -33,5 +33,5 @@ EXTERNAL UnlockActivity(id)
 
 === function unlockActivity(id)
 ~ UnlockActivity(id)
-New activity unlocked! #box event
+New activity unlocked!: {id} (Fix this, show name) #box event
 ~ return

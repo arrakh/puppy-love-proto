@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 596a6b310f4f4ee6af36f5ce8984e8c8, type: 3}
-  m_Name: Math
+  m_Name: 1_Math_Wed
   m_EditorClassIdentifier: 
   displayName: Math
   entries: {fileID: 11400000, guid: 1817aa1df89e8e3499f74d029eb38837, type: 2}
   parameters:
-    baseTimer: 60
-    quizCount: 3
-    passingGrade: 2
-    otherAnswersCount: 1
-    fakeAnswersCount: 0
-    drainPerFocus: 0.8
+    baseTimer: 30
+    quizCount: 7
+    passingGrade: 4
+    otherAnswersCount: 2
+    fakeAnswersCount: 1
+    drainPerFocus: 1
     classLogicToMoodRatio: 1

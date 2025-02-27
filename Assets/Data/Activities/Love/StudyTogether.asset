@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e3cdd722d840e68075fd394d2afbcc, type: 3}
   m_Name: StudyTogether
   m_EditorClassIdentifier: 
-  displayName: StudyTogether
+  displayName: Study Together
   activityId: studytogether
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 1
+  moodGain: 2
+  stressGain: -1

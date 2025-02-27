@@ -15,5 +15,5 @@ MonoBehaviour:
   displayName: Appreciate Art
   activityId: appreciate
   logicGain: 0
-  moodGain: 1
+  moodGain: 2
   stressGain: 0

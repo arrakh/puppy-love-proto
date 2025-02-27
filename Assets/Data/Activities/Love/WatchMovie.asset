@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: WatchMovie
   activityId: watchmovie
-  logicBonusDisplay: 
-  moodBonusDisplay: 
+  logicGain: 0
+  moodGain: 2
+  stressGain: 0
