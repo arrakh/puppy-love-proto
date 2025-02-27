@@ -29,7 +29,6 @@
 - You described a dream you had in vivid detail...
 }
 ~ addMood(1)
-~ addLogic(1)
 -> END
 
 === activity_self_quiz ===
@@ -52,6 +51,7 @@
 - You lifted some light weights to build endurance...
 }
 ~ addMood(1)
+~ addLogic(1)
 -> END
 
 === activity_watchmovie ===
@@ -90,7 +90,7 @@ Silence. Their shoulders tense as the killer’s footsteps resume.#box event
 "…Do psychos kill people who failed algebra?"#box left
 "AHA, I know someone is afraid now!"#box right
 "Shuuu! We should focus on the movie."#box left
-~ addMood(1)
+~ addMood(2)
 ->DONE
 
 === romanticMovie ===
@@ -113,6 +113,7 @@ It takes Two is quite popular in class recently.#bg game #box event
 " …Reset the level?"#box right
 "I’m never letting you lead again."#box left
 ~ addMood(2)
+~ addStressLevel(-1)
 -> END
 
 === activity_textmessage ===
@@ -129,6 +130,7 @@ Phone screen glows. A new message from SHU.#bg text #box event
 "Love you tho. Now sleep."#box left
 "Love you too. Also, I’d power through."#box right
 ~ addMood(2)
+~ addStressLevel(-1)
 -> END
 
 === activity_vediocall ===
@@ -154,6 +156,7 @@ You are lying on bed, staring at the ceiling, on the phone with SHU.#bg video #b
 "Alright, fine. Send me the list. Just don’t put math on there."#box right
 "No promises."#box left
 ~ addMood(1)
+~ addStressLevel(-1)
 -> END
 
 === activity_studytogether ===
@@ -170,5 +173,6 @@ You are reading, SHU is lying on the table, groaning.#box event
 "Wake me up in five minutes."#box right
 "Gonna let you sleep for thirty so I can study in peace."#box left
 ~ addMood(2)
-~ AddLogic(1)
+~ addLogic(1)
+~ addStressLevel(-1)
 -> END

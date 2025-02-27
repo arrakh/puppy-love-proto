@@ -65,6 +65,8 @@ namespace DefaultNamespace
             storyController.InitializeStory(story.text);
 
             foreach (var week in weeks) yield return WeekLoop(week);
+            
+            yield return transitionUi.WaitTransitionIn("Thanks for playing!", 0.6f, 1.4f);
 
             yield break;
         }
